@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 96" fill="none">
+  <rect x="2" y="2" width="236" height="92" rx="12" fill="#ffffff" stroke="#0f2d52" stroke-width="2.5"/>
+  <rect x="8" y="8" width="224" height="80" rx="8" fill="#f8fafc" stroke="#0d7c75" stroke-width="1"/>
+  <circle cx="46" cy="48" r="26" fill="#0f2d52"/>
+  <path d="M46 29L60 35V47C60 56 54 63 46 66C38 63 32 56 32 47V35L46 29Z" fill="#0d7c75" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M40 48L44 52L53 43" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="33" fill="#0f2d52" font-family="sans-serif" font-size="10" font-weight="700" letter-spacing="0.6">NATIONAL PRIVACY COMMISSION</text>
+  <text x="84" y="52" fill="#0d7c75" font-family="sans-serif" font-size="14" font-weight="800">DPO / DPS REGISTERED</text>
+  <text x="84" y="69" fill="#475569" font-family="sans-serif" font-size="9.5" font-weight="600">RA 10173 Data Privacy Act Compliant</text>
+</svg>
