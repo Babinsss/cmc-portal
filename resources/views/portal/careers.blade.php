@@ -105,7 +105,7 @@
                             </div>
                         </template>
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-teal-50/70 border border-cmc-teal/20 rounded-xl p-4 text-xs text-slate-700">
-                            <span>Submit application letter, PDS (CS Form 212), and PRC credentials to the HR Management Office, Capiz Medical Center, {{ $settings['location'] ?? 'Sitio Nasagud, Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }}.</span>
+                            <span>Submit application letter, PDS (CS Form 212), and PRC credentials to the HR Management Office, Capiz Medical Center, {{ $settings['location'] ?? 'Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }}.</span>
                             <a href="{{ route('portal.contact') }}" class="font-semibold text-cmc-teal hover:underline shrink-0">Inquire via Assistance Desk &rarr;</a>
                         </div>
                     </div>

@@ -23,7 +23,7 @@
     $categoryExamples = [
         'laboratory' => 'Blood chemistry, CBC & urinalysis',
         'radiology' => 'X-rays & CT scans with reading',
-        'ultrasound' => 'Abdominal, pelvic & OB scans',
+        'ultrasound' => 'Whole abdomen, KUB, KUBP & guided',
         'cardio-pulmonary-unit' => 'ECG, 2D Echo & nebulization',
         'pharmacy' => 'Essential medicines (DOH DPRI)',
         'central-supply-room' => 'Syringes, IV sets & dressings',
@@ -94,7 +94,7 @@
                         </p>
                         <div class="flex flex-wrap items-center gap-1.5 text-xs text-cmc-navy">
                             <span class="font-semibold bg-white/85 px-2.5 py-1 rounded-full mr-0.5">Common (Masami):</span>
-                            @foreach (['CBC', 'Chest X-Ray', 'Ultrasound', 'Private Room'] as $quickTerm)
+                            @foreach (['CBC', 'X-Ray', 'Ultrasound', 'Private Room'] as $quickTerm)
                                 <a href="{{ route('portal.pricelist', ['q' => $quickTerm]) }}"
                                    class="inline-flex items-center min-h-11 px-3 py-2 rounded-full bg-white/95 hover:bg-cmc-navy hover:text-white border border-cmc-navy/20 text-cmc-navy font-semibold transition shadow-xs">
                                     {{ $quickTerm }}
@@ -128,14 +128,14 @@
                                     {{ $settings['hospital_name'] ?? 'Capiz Medical Center' }}
                                 </h2>
                                 <p class="text-xs text-slate-700 leading-snug text-pretty">
-                                    {{ $settings['location'] ?? 'Sitio Nasagud, Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }}
+                                    {{ $settings['location'] ?? 'Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }}
                                 </p>
                             </div>
                         </div>
 
                         <div class="flex flex-wrap items-center justify-between gap-2 pt-3 border-t border-slate-100 text-xs">
                             <span class="text-slate-600 font-medium">Outpatient (OPD): Mon–Fri 8 AM–4 PM</span>
-                            <a href="{{ route('portal.contact') }}" class="inline-flex items-center gap-1 min-h-11 font-bold text-cmc-red hover:text-red-800 transition shrink-0">
+                            <a href="{{ route('portal.contact') }}#campus-map" class="inline-flex items-center gap-1 min-h-11 font-bold text-cmc-red hover:text-red-800 transition shrink-0">
                                 Emergency &amp; Campus Map &rarr;
                             </a>
                         </div>
@@ -342,7 +342,7 @@
                     <div>
                         <h3 class="font-bold text-cmc-navy text-balance">Emergency Room Intake (24/7 Emerhensya)</h3>
                         <p class="text-xs text-slate-700 mt-1 leading-relaxed text-pretty">
-                            Proceed straight to the Emergency Room triage entrance at Sitio Nasagud, Brgy. Lanot. Immediate medical stabilization comes first before billing or PhilHealth paperwork.
+                            Proceed straight to the Emergency Room triage entrance at Brgy. Lanot, Roxas City. Immediate medical stabilization comes first before billing or PhilHealth paperwork.
                         </p>
                     </div>
                     <div>
@@ -382,7 +382,7 @@
                 <div class="lg:col-span-6 space-y-4">
                     <h2 class="text-2xl font-bold text-cmc-navy leading-snug text-balance">Campus Visit &amp; Public Assistance (Serbisyo nga may Gugma)</h2>
                     <p class="text-sm text-slate-600 leading-relaxed max-w-lg text-pretty">
-                        Visit us at {{ $settings['location'] ?? 'Sitio Nasagud, Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }} for 24/7 emergency care, Mon–Fri 8 AM–4 PM outpatient clinics, or view open hospital careers.
+                        Visit us at {{ $settings['location'] ?? 'Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }} for 24/7 emergency care, Mon–Fri 8 AM–4 PM outpatient clinics, or view open hospital careers.
                     </p>
                     <div class="flex flex-wrap gap-3 pt-1">
                         <a href="{{ route('portal.contact') }}" class="inline-flex items-center min-h-11 px-5 py-2.5 rounded-lg bg-cmc-navy hover:bg-cmc-blue text-white font-semibold text-sm transition">

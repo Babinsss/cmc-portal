@@ -69,6 +69,12 @@ class AnnouncementResource extends Resource
                         ->required()
                         ->rows(8)
                         ->columnSpanFull(),
+                    Forms\Components\FileUpload::make('image_path')
+                        ->label('Announcement Poster / Image')
+                        ->image()
+                        ->disk('public')
+                        ->directory('announcements')
+                        ->columnSpanFull(),
                 ]),
         ]);
     }

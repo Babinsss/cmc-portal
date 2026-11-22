@@ -33,7 +33,6 @@
         }
         .category-block {
             margin-bottom: 16px;
-            page-break-inside: avoid;
         }
         .category-title {
             background-color: #0f2d52;
@@ -42,6 +41,10 @@
             font-size: 11px;
             font-weight: bold;
             margin: 0;
+            page-break-after: avoid;
+        }
+        tr {
+            page-break-inside: avoid;
         }
         .category-desc {
             background-color: #f1f5f9;
@@ -115,7 +118,7 @@
             @endif
         </p>
         <p class="meta">
-            {{ $settings['location'] ?? 'Sitio Nasagud, Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }}
+            {{ $settings['location'] ?? 'Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }}
             &nbsp;|&nbsp; Trunklines: {{ $settings['hotline_1'] ?? '(036) 621-0030' }} / {{ $settings['hotline_2'] ?? '(036) 621-0823' }}
             &nbsp;|&nbsp; Generated: {{ $generatedAt }}
         </p>

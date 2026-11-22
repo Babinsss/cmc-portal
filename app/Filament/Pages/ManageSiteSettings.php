@@ -56,6 +56,7 @@ class ManageSiteSettings extends Page implements HasForms
             'dpo_email' => $map['dpo_email'] ?? '',
             'facebook_url' => $map['facebook_url'] ?? '',
             'google_maps_url' => $map['google_maps_url'] ?? '',
+            'google_maps_embed_url' => $map['google_maps_embed_url'] ?? '',
             'npc_registration_no' => $map['npc_registration_no'] ?? '',
             'copyright_year' => $map['copyright_year'] ?? date('Y'),
             'vision' => $map['vision'] ?? '',
@@ -95,6 +96,11 @@ class ManageSiteSettings extends Page implements HasForms
                         Forms\Components\TextInput::make('dpo_email')->label('DPO Email (RA 10173)')->email()->maxLength(160),
                         Forms\Components\TextInput::make('facebook_url')->url()->maxLength(255),
                         Forms\Components\TextInput::make('google_maps_url')->url()->maxLength(255),
+                        Forms\Components\TextInput::make('google_maps_embed_url')
+                            ->label('Google Maps Embed URL')
+                            ->url()
+                            ->maxLength(1000)
+                            ->columnSpanFull(),
                     ]),
 
                 Forms\Components\Section::make('NPC DPO/DPS Seal & Local Visual Assets')
@@ -155,6 +161,7 @@ class ManageSiteSettings extends Page implements HasForms
             'dpo_email',
             'facebook_url',
             'google_maps_url',
+            'google_maps_embed_url',
             'npc_registration_no',
             'copyright_year',
             'vision',

@@ -16,7 +16,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', $hospitalName . ' — Official Portal')</title>
-    <meta name="description" content="@yield('meta_description', $hospitalName . ' — ' . $tagline . '. Level II Government Hospital in Sitio Nasagud, Brgy. Lanot, Roxas City, Capiz.')">
+    <meta name="description" content="@yield('meta_description', $hospitalName . ' — ' . $tagline . '. Level II Government Hospital in Brgy. Lanot, Roxas City, Capiz.')">
     <link rel="icon" type="image/svg+xml" href="{{ asset('images/cmc-favicon.svg') }}">
     <link rel="apple-touch-icon" href="{{ asset('images/cmc-logo-official.jpg') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -192,7 +192,7 @@
                 <div>
                     <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-3">Hospital Contact</h4>
                     <ul class="space-y-2.5 text-sm text-slate-300">
-                        <li class="text-pretty">{{ $settings['location'] ?? 'Sitio Nasagud, Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }}</li>
+                        <li class="text-pretty">{{ $settings['location'] ?? 'Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }}</li>
                         <li class="tabular-nums">
                             <span class="text-slate-400 text-xs block">24/7 Trunklines:</span>
                             <a href="tel:{{ $hotline1Tel }}" class="hover:text-teal-200 font-medium">{{ $hotline1 }}</a>
@@ -231,7 +231,9 @@
                 <p>&copy; {{ $settings['copyright_year'] ?? date('Y') }} {{ $hospitalName }}. All rights reserved.</p>
                 <div class="flex flex-wrap items-center justify-center sm:justify-end gap-x-4 gap-y-2 text-center sm:text-right">
                     <span>Official Public Information Portal · Roxas City, Capiz</span>
-                    <a href="{{ url('/admin') }}" class="shrink-0 whitespace-nowrap text-slate-300 hover:text-white underline underline-offset-4 transition">Staff Admin</a>
+                    @if (! config('cmc.static_export'))
+                        <a href="{{ url('/admin') }}" class="shrink-0 whitespace-nowrap text-slate-300 hover:text-white underline underline-offset-4 transition">Staff Admin</a>
+                    @endif
                 </div>
             </div>
         </div>

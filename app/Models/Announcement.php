@@ -14,6 +14,7 @@ class Announcement extends Model
         'category',
         'summary',
         'body',
+        'image_path',
         'published_at',
         'expires_at',
         'is_pinned',
@@ -46,5 +47,20 @@ class Announcement extends Model
     public function author(): BelongsTo
     {
         return $this->belongsTo(User::class, 'created_by');
+    }
+
+    public function imageUrl(): ?string
+    {
+        $path = trim((string) $this->image_path);
+
+        if ($path === '') {
+            return null;
+        }
+
+        if (str_starts_with($path, 'images/')) {
+            return asset($path);
+        }
+
+        return asset('storage/'.ltrim($path, '/'));
     }
 }

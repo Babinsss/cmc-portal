@@ -25,11 +25,11 @@ class PricelistBulkImporterTest extends TestCase
         $lab = PricelistCategory::query()->where('slug', 'laboratory')->firstOrFail();
         $encoder = User::query()->where('email', 'encoder@cmc.local')->firstOrFail();
 
-        $csvPath = tempnam(sys_get_temp_dir(), 'cmc_import_') . '.csv';
+        $csvPath = tempnam(sys_get_temp_dir(), 'cmc_import_').'.csv';
         file_put_contents($csvPath, implode("\n", [
             'item_code,name,unit,price,is_available,notes',
-            'LAB-CBC,Complete Blood Count (CBC) with Platelet,Per Test,250.00,Yes,Updated rate',
-            'LAB-HBA1C,Glycated Hemoglobin (HbA1c),Per Test,620.00,Yes,New test',
+            'LAB-HEMA-03,CBC (MACHINE),Per Test,250.00,Yes,Updated rate',
+            'LAB-VITD,25-Hydroxy Vitamin D,Per Test,1450.00,Yes,New test',
             ',Missing Code Row,Per Test,-10,Yes,Invalid row',
         ]));
 
@@ -56,16 +56,16 @@ class PricelistBulkImporterTest extends TestCase
 
             $updatedCbc = PricelistItem::query()
                 ->where('category_id', $lab->id)
-                ->where('item_code', 'LAB-CBC')
+                ->where('item_code', 'LAB-HEMA-03')
                 ->firstOrFail();
             $this->assertSame('250.00', (string) $updatedCbc->price);
 
-            $createdHba1c = PricelistItem::query()
+            $createdVitD = PricelistItem::query()
                 ->where('category_id', $lab->id)
-                ->where('item_code', 'LAB-HBA1C')
+                ->where('item_code', 'LAB-VITD')
                 ->firstOrFail();
-            $this->assertSame('620.00', (string) $createdHba1c->price);
-            $this->assertSame($encoder->id, $createdHba1c->updated_by);
+            $this->assertSame('1450.00', (string) $createdVitD->price);
+            $this->assertSame($encoder->id, $createdVitD->updated_by);
         } finally {
             @unlink($csvPath);
         }

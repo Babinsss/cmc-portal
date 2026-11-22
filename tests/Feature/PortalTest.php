@@ -49,7 +49,9 @@ class PortalTest extends TestCase
             ->assertSee('Capiz Medical Center')
             ->assertSee('Pag-atipan nga may gugma')
             ->assertSee('(036) 621-0030')
-            ->assertSee('(036) 621-0823');
+            ->assertSee('(036) 621-0823')
+            ->assertSee('Brgy. Lanot, Roxas City, Capiz 5800, Philippines')
+            ->assertDontSee('Sitio Nasagud');
 
         $this->get('/about')
             ->assertOk()
@@ -103,5 +105,95 @@ class PortalTest extends TestCase
             'privacy_consented' => true,
             'status' => Inquiry::STATUS_NEW,
         ]);
+    }
+
+    public function test_contact_page_embeds_official_google_map_and_offline_guide(): void
+    {
+        $this->get('/contact')
+            ->assertOk()
+            ->assertSee('https://www.google.com/maps/embed?pb=', false)
+            ->assertSee('Offline Campus Guide')
+            ->assertSee('id="campus-map"', false);
+    }
+
+    public function test_pharmacy_pricelist_contains_official_august_2025_rates(): void
+    {
+        $this->get('/pricelist?category=pharmacy')
+            ->assertOk()
+            ->assertSee('PARACETAMOL 500mg TABLET')
+            ->assertSee('MEROPENEM 1g VIAL')
+            ->assertSee('SEVOFLURANE 100% X 250ml BOTTLE')
+            ->assertSee('Consigned Stocks')
+            ->assertSee('Non-Consigned')
+            ->assertDontSee('PHM-PARA500');
+
+        $pdf = $this->get('/pricelist/pharmacy/pdf');
+        $pdf->assertOk();
+        $this->assertStringContainsString('application/pdf', (string) $pdf->headers->get('content-type'));
+    }
+
+    public function test_internal_medicine_residency_announcement_displays_details_and_poster(): void
+    {
+        $this->get('/advisories')
+            ->assertOk()
+            ->assertSee('Department of Internal Medicine')
+            ->assertSee('3-Year PCP-Accredited Residency Training Program')
+            ->assertSee('internal-medicine-residency.jpg');
+
+        $this->get('/advisories/pcp-accredited-internal-medicine-residency-open')
+            ->assertOk()
+            ->assertSee('Dr. Ma. Camille Belasoto')
+            ->assertSee('09175066702')
+            ->assertSee('dim.rmph0234@gmail.com')
+            ->assertSee('(036) 6210-0030 Loc. 160')
+            ->assertSee('internal-medicine-residency.jpg');
+    }
+
+    public function test_general_surgery_residency_announcement_displays_details_and_poster(): void
+    {
+        $this->get('/advisories')
+            ->assertOk()
+            ->assertSee('Department of Surgery')
+            ->assertSee('5-Year PSGS-Accredited General Surgery Residency Training Program')
+            ->assertSee('general-surgery-residency.jpg');
+
+        $this->get('/advisories/psgs-accredited-general-surgery-residency-open')
+            ->assertOk()
+            ->assertSee('Philippine Society of General Surgeons')
+            ->assertSee('Jheimar B. Francisco')
+            ->assertSee('Roy Jason P. Montecillo')
+            ->assertSee('(036) 6210-030 local 178')
+            ->assertSee('rmphrxcapiz@yahoo.com')
+            ->assertSee('general-surgery-residency.jpg');
+    }
+
+    public function test_ct_scan_ultrasound_and_lab_rates_match_january_2026_schedules(): void
+    {
+        $this->get('/pricelist?category=laboratory')
+            ->assertOk()
+            ->assertSee('24 HR, URINE COLLECTION CLEARANCE')
+            ->assertSee('CULTURE SENSITIVITY = BLOOD')
+            ->assertSee('PROCALCITONIN')
+            ->assertSee('DRUG TESTING')
+            ->assertDontSee('LAB-CBC');
+
+        $this->get('/pricelist?category=radiology')
+            ->assertOk()
+            ->assertSee('SKULL APL')
+            ->assertSee('CHEST BUCKY')
+            ->assertSee('BARIUM ENEMA')
+            ->assertSee('PORTABLE MACHINE (ADDITIONAL CHARGE)')
+            ->assertSee('CRANIAL CT PLAIN')
+            ->assertSee('WHOLE ABDOMEN TRIPLE WITH CONTRAST')
+            ->assertSee('CT ANGIOGRAM')
+            ->assertDontSee('RAD-CXR-PA')
+            ->assertDontSee('RAD-CT-CRAN');
+
+        $this->get('/pricelist?category=ultrasound')
+            ->assertOk()
+            ->assertSee('Whole Abdomen Ultrasound')
+            ->assertSee('KUBP Ultrasound')
+            ->assertSee('Dr. Emmanuel M. Palomata')
+            ->assertDontSee('UTS-WABD');
     }
 }
