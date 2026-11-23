@@ -28,7 +28,7 @@ class SiteSetting extends Model
             'email' => 'info@capizmedicalcenter.gov.ph',
             'dpo_email' => 'dpo@capizmedicalcenter.gov.ph',
             'facebook_url' => 'https://www.facebook.com/RMPHCapiz',
-            'google_maps_url' => 'https://maps.google.com/?q=Capiz+Medical+Center+Brgy+Lanot+Roxas+City+Capiz',
+            'google_maps_url' => 'https://www.google.com/maps/search/?api=1&query=Roxas+Memorial+Provincial+Hospital+Outpatient+Department,+Brgy.+Lanot,+Roxas+City,+Capiz',
             'google_maps_embed_url' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31275.168499060495!2d122.71808591083985!3d11.523420600000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a5f485054ad937%3A0xdfe1c6fcffcd9ce2!2sRoxas%20Memorial%20Provincial%20Hospital%20Outpatient%20Department!5e0!3m2!1sen!2sph!4v1795160414285!5m2!1sen!2sph',
             'npc_registration_no' => 'DPO/DPS Registered — RA 10173 Compliant',
             'npc_seal_path' => 'images/npc-seal-official.jpg',

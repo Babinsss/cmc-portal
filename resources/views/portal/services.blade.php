@@ -50,7 +50,7 @@
                 <label for="services-search" class="sr-only">Filter medical services</label>
                 <svg class="w-5 h-5 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
                 <input id="services-search" type="text" x-model="query" placeholder="Filter services or subspecialties (e.g. Cardiology, Neonatology, CT Scan)..."
-                       class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-cmc-teal focus:outline-none">
+                       class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:border-cmc-blue">
             </div>
             <div class="flex flex-wrap items-center gap-2">
                 <button type="button" @click="scheduleFilter = 'all'"
@@ -59,12 +59,12 @@
                     All Divisions (<span x-text="services.length"></span>)
                 </button>
                 <button type="button" @click="scheduleFilter = '24_7'"
-                        :class="scheduleFilter === '24_7' ? 'bg-emerald-700 text-white' : 'bg-emerald-50 text-emerald-800 hover:bg-emerald-100'"
+                        :class="scheduleFilter === '24_7' ? 'bg-cmc-blue text-white' : 'bg-sky-50 text-cmc-blue hover:bg-sky-100'"
                         class="px-3.5 py-2 rounded-lg text-xs font-semibold transition cursor-pointer">
                     24/7 Emergency &amp; Inpatient
                 </button>
                 <button type="button" @click="scheduleFilter = 'office'"
-                        :class="scheduleFilter === 'office' ? 'bg-amber-700 text-white' : 'bg-amber-50 text-amber-900 hover:bg-amber-100'"
+                        :class="scheduleFilter === 'office' ? 'bg-amber-600 text-white' : 'bg-amber-50 text-amber-900 hover:bg-amber-100'"
                         class="px-3.5 py-2 rounded-lg text-xs font-semibold transition cursor-pointer">
                     OPD &amp; Specialty Clinics
                 </button>
@@ -72,10 +72,10 @@
         </div>
 
         {{-- Empty State --}}
-        <div x-show="filtered.length === 0" x-cloak class="bg-white rounded-xl border border-slate-200 p-10 text-center">
+        <div x-show="filtered.length === 0" x-cloak class="bg-white rounded-xl border border-slate-200/80 p-10 text-center">
             <p class="text-base font-semibold text-cmc-navy">No matching medical services found.</p>
             <p class="text-sm text-slate-600 mt-1">Try clearing the filter or searching another clinical specialty.</p>
-            <button type="button" @click="query = ''; scheduleFilter = 'all'" class="mt-4 px-4 py-2 rounded-lg bg-cmc-teal text-white text-xs font-semibold cursor-pointer hover:bg-teal-800 transition">
+            <button type="button" @click="query = ''; scheduleFilter = 'all'" class="mt-4 px-4 py-2 rounded-lg bg-cmc-blue text-white text-xs font-semibold cursor-pointer hover:bg-cmc-navy transition">
                 Reset Filters
             </button>
         </div>
@@ -83,25 +83,24 @@
         {{-- Service Cards Grid --}}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <template x-for="service in filtered" :key="service.id">
-                <article :class="service.is_highlighted ? 'border-cmc-teal ring-1 ring-cmc-teal/20' : 'border-slate-200'"
-                         class="bg-white rounded-2xl border p-6 shadow-sm flex flex-col justify-between transition hover:shadow-md">
+                <article class="bg-white rounded-2xl border border-slate-200/80 hover:border-cmc-blue/50 p-6 shadow-sm flex flex-col justify-between transition">
                     <div>
                         <div class="flex flex-wrap items-start justify-between gap-3">
                             <div class="min-w-0">
                                 <div class="flex flex-wrap items-center gap-2">
-                                    <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-md bg-cmc-navy text-white text-xs font-bold" x-text="'Hospital Service ' + service.code"></span>
+                                    <span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-md bg-cmc-navy text-white text-xs font-bold" x-text="'Service ' + service.code"></span>
                                     <template x-if="service.is_highlighted">
-                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-md bg-amber-100 text-amber-900 text-xs font-bold"
-                                              x-text="service.slug === 'physician-residency-training-program' ? 'PCP & PSGS Accredited' : 'Core Public Service'">
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-md bg-amber-50 text-amber-900 border border-amber-200/80 text-xs font-bold"
+                                              x-text="service.slug === 'physician-residency-training-program' ? 'PCP & PSGS Accredited' : 'Core Service'">
                                         </span>
                                     </template>
                                 </div>
                                 <h2 class="text-xl font-bold text-cmc-navy mt-2 leading-snug" x-text="service.name"></h2>
                             </div>
 
-                            <span :class="service.is_24_7 ? 'bg-emerald-100 text-emerald-800 border-emerald-200' : 'bg-amber-100 text-amber-900 border-amber-200'"
+                            <span :class="service.is_24_7 ? 'bg-sky-50 text-cmc-blue border-slate-200/80' : 'bg-amber-50 text-amber-900 border-amber-200/80'"
                                   class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border shrink-0">
-                                <span :class="service.is_24_7 ? 'bg-emerald-600' : 'bg-amber-600'" class="w-2 h-2 rounded-full"></span>
+                                <span :class="service.is_24_7 ? 'bg-cmc-blue' : 'bg-amber-600'" class="w-2 h-2 rounded-full"></span>
                                 <span x-text="service.schedule_label"></span>
                             </span>
                         </div>
@@ -115,7 +114,7 @@
                                     <template x-for="sub in service.subspecialties" :key="sub.name">
                                         <li class="flex flex-col justify-center gap-1 px-3 py-2.5 rounded-lg bg-slate-50 border border-slate-200/70 text-xs text-slate-700">
                                             <span class="flex items-start gap-2 font-medium">
-                                                <span class="w-1.5 h-1.5 rounded-full bg-cmc-teal shrink-0 mt-1.5"></span>
+                                                <span class="w-1.5 h-1.5 rounded-full bg-cmc-blue shrink-0 mt-1.5"></span>
                                                 <span x-text="sub.name"></span>
                                             </span>
                                             <template x-if="sub.schedule_note">
@@ -129,10 +128,10 @@
                     </div>
 
                     <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
-                        <a href="{{ route('portal.pricelist') }}" class="text-cmc-teal hover:text-cmc-navy transition">
+                        <a href="{{ route('portal.pricelist') }}" class="text-cmc-blue hover:text-cmc-navy transition">
                             Check Citizen's Charter Rates &rarr;
                         </a>
-                        <a href="{{ route('portal.contact') }}" class="text-cmc-blue hover:text-cmc-teal transition">
+                        <a href="{{ route('portal.contact') }}" class="text-cmc-blue hover:text-cmc-navy transition">
                             Schedule Inquiry &rarr;
                         </a>
                     </div>

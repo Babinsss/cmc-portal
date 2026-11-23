@@ -23,7 +23,7 @@
         }
         .subtitle {
             font-size: 10px;
-            color: #0d7c75;
+            color: #0e4a86;
             margin: 2px 0 0 0;
         }
         .meta {

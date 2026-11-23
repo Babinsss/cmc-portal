@@ -30,7 +30,7 @@
                     Print View
                 </button>
                 <a href="{{ route('portal.pricelist.pdf.all') }}" target="_blank" rel="noopener noreferrer"
-                   class="inline-flex items-center gap-2 min-h-11 px-4 py-2.5 rounded-lg bg-cmc-teal text-white text-xs font-semibold hover:bg-teal-800 transition shadow-sm">
+                   class="inline-flex items-center gap-2 min-h-11 px-4 py-2.5 rounded-lg bg-cmc-blue text-white text-xs font-semibold hover:bg-sky-700 transition shadow-sm">
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
                     Download Complete Charter PDF
                 </a>
@@ -147,14 +147,14 @@
     }" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
         {{-- Search Controls --}}
-        <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm mb-6 no-print space-y-4">
+        <div class="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-sm mb-6 no-print space-y-4">
             <div class="flex flex-col lg:flex-row gap-4 items-stretch lg:items-center">
                 <div class="relative flex-1">
                     <label for="pricelist-search" class="sr-only">Search hospital pricelist</label>
                     <svg class="w-5 h-5 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
                     <input id="pricelist-search" type="text" x-model="search"
-                           placeholder="Search code, procedure, medicine, or room (e.g. CBC, Chest X-Ray)..."
-                           class="w-full min-h-11 pl-10 pr-11 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 placeholder:text-slate-500 focus:border-cmc-teal">
+                           placeholder="Search code, procedure, medicine, or room (e.g. CBC, X-Ray)..."
+                           class="w-full min-h-11 pl-10 pr-11 py-3 rounded-xl border border-slate-200 text-sm text-slate-900 placeholder:text-slate-500 focus:border-cmc-blue">
                     <button type="button" x-show="search !== ''" x-cloak @click="search = ''" aria-label="Clear search"
                             class="absolute right-2 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-800 min-h-10 min-w-10 inline-flex items-center justify-center rounded-md cursor-pointer">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
@@ -162,8 +162,8 @@
                 </div>
 
                 <div class="flex flex-wrap items-center gap-3">
-                    <label class="inline-flex items-center gap-2 min-h-11 text-xs font-medium text-slate-700 bg-slate-50 px-3.5 py-2 rounded-lg border border-slate-200 cursor-pointer select-none">
-                        <input type="checkbox" x-model="onlyAvailable" class="h-4 w-4 rounded border-slate-300 text-cmc-teal focus:ring-cmc-teal">
+                    <label class="inline-flex items-center gap-2 min-h-11 text-xs font-medium text-slate-700 bg-slate-50 px-3.5 py-2 rounded-lg border border-slate-200/80 cursor-pointer select-none">
+                        <input type="checkbox" x-model="onlyAvailable" class="h-4 w-4 rounded border-slate-300 text-cmc-blue focus:ring-cmc-blue">
                         Available items only
                     </label>
 
@@ -180,7 +180,7 @@
                     <span>Quick examples:</span>
                     @foreach (['CBC', 'X-Ray', 'CT Scan', 'Private Room', 'Paracetamol', 'Ultrasound', 'ECG'] as $chip)
                         <button type="button" @click="search = '{{ $chip }}'; activeCategory = 'all'; activeSubgroup = 'all'"
-                                class="min-h-11 px-3 py-1.5 rounded-full bg-slate-100 hover:bg-teal-50 hover:text-cmc-teal font-medium transition cursor-pointer">
+                                class="min-h-11 px-3 py-1.5 rounded-full bg-slate-100 hover:bg-sky-50 hover:text-cmc-blue font-medium transition cursor-pointer">
                             {{ $chip }}
                         </button>
                     @endforeach
@@ -190,7 +190,7 @@
                     Showing <span class="font-bold text-cmc-navy" x-text="filteredItems.length"></span> of <span x-text="items.length"></span> rates
                     <button type="button" x-show="search !== '' || activeCategory !== 'all' || onlyAvailable || activeSubgroup !== 'all'" x-cloak
                             @click="search = ''; activeCategory = 'all'; activeSubgroup = 'all'; onlyAvailable = false"
-                            class="ml-2 inline-flex items-center min-h-11 px-1.5 text-cmc-teal font-semibold underline underline-offset-2 cursor-pointer">
+                            class="ml-2 inline-flex items-center min-h-11 px-1.5 text-cmc-blue font-semibold underline underline-offset-2 cursor-pointer">
                         Reset
                     </button>
                 </div>
@@ -200,7 +200,7 @@
         {{-- 8 Category Tabs --}}
         <div role="tablist" aria-label="Hospital fee categories" class="flex flex-wrap gap-2 mb-6 no-print">
             <button type="button" role="tab" :aria-selected="(activeCategory === 'all').toString()" @click="activeCategory = 'all'; activeSubgroup = 'all'"
-                    :class="activeCategory === 'all' ? 'bg-cmc-navy text-white shadow-sm' : 'bg-white text-slate-700 border border-slate-200 hover:border-cmc-teal'"
+                    :class="activeCategory === 'all' ? 'bg-cmc-navy text-white shadow-sm' : 'bg-white text-slate-700 border border-slate-200/80 hover:border-cmc-blue/50'"
                     class="min-h-11 px-3 py-2 rounded-lg text-xs font-semibold transition cursor-pointer inline-flex items-center gap-1.5">
                 <span>All Sections</span>
                 <span class="px-1.5 py-0.5 rounded-full text-xs tabular-nums"
@@ -210,7 +210,7 @@
 
             <template x-for="cat in categories" :key="cat.id">
                 <button type="button" role="tab" :aria-selected="(activeCategory === cat.slug).toString()" @click="activeCategory = cat.slug; activeSubgroup = 'all'"
-                        :class="activeCategory === cat.slug ? 'bg-cmc-teal text-white shadow-sm' : 'bg-white text-slate-700 border border-slate-200 hover:border-cmc-teal'"
+                        :class="activeCategory === cat.slug ? 'bg-cmc-blue text-white shadow-sm' : 'bg-white text-slate-700 border border-slate-200/80 hover:border-cmc-blue/50'"
                         class="min-h-11 px-3 py-2 rounded-lg text-xs font-semibold transition cursor-pointer inline-flex items-center gap-1.5">
                     <span x-text="cat.name"></span>
                     <span class="px-1.5 py-0.5 rounded-full text-xs tabular-nums"
@@ -222,7 +222,7 @@
 
         {{-- Active Category Info Banner + Subgroup Filter --}}
         <template x-if="activeCategoryObj">
-            <div class="bg-blue-50/80 border border-blue-200 rounded-xl p-4 mb-5 space-y-3">
+            <div class="bg-sky-50/70 border border-slate-200/80 rounded-xl p-4 mb-5 space-y-3">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <div>
                         <h2 class="font-bold text-cmc-navy text-base text-balance" x-text="activeCategoryObj.name"></h2>
@@ -233,10 +233,10 @@
                     </div>
                 </div>
 
-                <div x-show="activeSubgroups.length > 0" class="pt-3 border-t border-blue-200/80 flex flex-wrap items-center gap-2 no-print" role="group" aria-label="Section unit filter">
+                <div x-show="activeSubgroups.length > 0" class="pt-3 border-t border-slate-200/80 flex flex-wrap items-center gap-2 no-print" role="group" aria-label="Section unit filter">
                     <template x-for="grp in activeSubgroups" :key="grp.key">
                         <button type="button" @click="activeSubgroup = grp.key"
-                                :class="activeSubgroup === grp.key ? 'bg-cmc-navy text-white' : 'bg-white text-slate-700 border border-blue-200 hover:border-cmc-blue'"
+                                :class="activeSubgroup === grp.key ? 'bg-cmc-navy text-white' : 'bg-white text-slate-700 border border-slate-200/80 hover:border-cmc-blue/50'"
                                 class="min-h-11 px-3 py-1.5 rounded-lg text-xs font-semibold transition cursor-pointer inline-flex items-center gap-1.5">
                             <span x-text="grp.label"></span>
                             <span class="tabular-nums text-xs opacity-85" x-text="'(' + countForSubgroup(grp.key) + ')'"></span>
@@ -257,9 +257,9 @@
         {{-- Mobile Card List (hidden on md+ and print) --}}
         <div class="md:hidden print:hidden space-y-3">
             <template x-if="filteredItems.length === 0">
-                <div class="bg-white rounded-2xl border border-slate-200 p-8 text-center text-sm text-slate-600">
+                <div class="bg-white rounded-2xl border border-slate-200/80 p-8 text-center text-sm text-slate-600">
                     No matching items found. Try another keyword or switch back to
-                    <button type="button" @click="activeCategory = 'all'; activeSubgroup = 'all'; search = ''; onlyAvailable = false" class="text-cmc-teal font-semibold underline cursor-pointer">All Sections</button>.
+                    <button type="button" @click="activeCategory = 'all'; activeSubgroup = 'all'; search = ''; onlyAvailable = false" class="text-cmc-blue font-semibold underline cursor-pointer">All Sections</button>.
                 </div>
             </template>
 
@@ -315,7 +315,7 @@
                         <template x-if="filteredItems.length === 0">
                             <tr>
                                 <td colspan="7" class="px-4 py-12 text-center text-slate-600">
-                                    No matching items found. Try another keyword or switch back to <button type="button" @click="activeCategory = 'all'; search = ''; onlyAvailable = false" class="text-cmc-teal font-semibold underline cursor-pointer">All Sections</button>.
+                                    No matching items found. Try another keyword or switch back to <button type="button" @click="activeCategory = 'all'; activeSubgroup = 'all'; search = ''; onlyAvailable = false" class="text-cmc-blue font-semibold underline cursor-pointer">All Sections</button>.
                                 </td>
                             </tr>
                         </template>

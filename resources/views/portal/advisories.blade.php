@@ -23,7 +23,7 @@
                     @php
                         $posterUrl = $advisory->imageUrl();
                     @endphp
-                    <article class="bg-white rounded-2xl border {{ $advisory->is_pinned ? 'border-cmc-teal ring-1 ring-cmc-teal/20' : 'border-slate-200' }} overflow-hidden shadow-sm flex flex-col justify-between">
+                    <article class="bg-white rounded-2xl border border-slate-200/80 hover:border-cmc-blue/50 overflow-hidden shadow-sm flex flex-col justify-between transition">
                         <div>
                             @if ($posterUrl)
                                 <a href="{{ route('portal.advisory.show', $advisory->slug) }}" class="block border-b border-slate-100 bg-slate-50">
@@ -35,23 +35,23 @@
                             @endif
                             <div class="p-6 pb-0">
                                 <div class="flex items-center justify-between gap-2 mb-3">
-                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold {{ $advisory->is_pinned ? 'bg-teal-50 text-cmc-teal border border-teal-200' : 'bg-slate-100 text-slate-700' }}">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold {{ $advisory->is_pinned ? 'bg-amber-50 text-amber-900 border border-amber-200/80' : 'bg-slate-100 text-slate-700' }}">
                                         {{ $advisory->is_pinned ? 'Pinned · ' . $advisory->category : $advisory->category }}
                                     </span>
                                     <time class="text-xs text-slate-600 tabular-nums">{{ ($advisory->published_at ?? $advisory->created_at)->format('M d, Y') }}</time>
                                 </div>
                                 <h2 class="text-lg font-bold text-cmc-navy leading-snug text-balance">
-                                    <a href="{{ route('portal.advisory.show', $advisory->slug) }}" class="hover:text-cmc-teal transition">
+                                    <a href="{{ route('portal.advisory.show', $advisory->slug) }}" class="hover:text-cmc-blue transition">
                                         {{ $advisory->title }}
                                     </a>
                                 </h2>
-                                <p class="text-sm text-slate-600 mt-2.5 leading-relaxed text-pretty">
+                                <p class="text-sm text-slate-600 mt-2.5 line-clamp-2 leading-relaxed text-pretty">
                                     {{ $advisory->summary ?: \Illuminate\Support\Str::limit(strip_tags($advisory->body), 160) }}
                                 </p>
                             </div>
                         </div>
                         <div class="m-6 mt-5 pt-3 border-t border-slate-100">
-                            <a href="{{ route('portal.advisory.show', $advisory->slug) }}" class="inline-flex items-center min-h-11 text-xs font-semibold text-cmc-blue hover:text-cmc-teal transition">
+                            <a href="{{ route('portal.advisory.show', $advisory->slug) }}" class="inline-flex items-center min-h-11 text-xs font-semibold text-cmc-blue hover:text-cmc-navy transition">
                                 Read full advisory &rarr;
                             </a>
                         </div>

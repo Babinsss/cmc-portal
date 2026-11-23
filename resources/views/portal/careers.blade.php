@@ -43,11 +43,11 @@
         }
     }" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
-        <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm mb-8 flex flex-col md:flex-row gap-4 items-stretch md:items-center justify-between">
+        <div class="bg-white rounded-xl border border-slate-200/80 p-4 shadow-sm mb-8 flex flex-col md:flex-row gap-4 items-stretch md:items-center justify-between">
             <div class="relative flex-1">
                 <label for="careers-search" class="sr-only">Search job title or department</label>
                 <input id="careers-search" type="text" x-model="query" placeholder="Search job title or department..."
-                       class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-cmc-teal focus:outline-none">
+                       class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:border-cmc-blue">
             </div>
             <div class="flex flex-wrap gap-2">
                 <button type="button" @click="typeFilter = 'all'"
@@ -57,24 +57,24 @@
                 </button>
                 <template x-for="type in types" :key="type">
                     <button type="button" @click="typeFilter = type"
-                            :class="typeFilter === type ? 'bg-cmc-teal text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'"
+                            :class="typeFilter === type ? 'bg-cmc-blue text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'"
                             class="px-3.5 py-2 rounded-lg text-xs font-semibold cursor-pointer transition"
                             x-text="type"></button>
                 </template>
             </div>
         </div>
 
-        <div x-show="filtered.length === 0" x-cloak class="bg-white rounded-2xl border border-slate-200 p-10 text-center text-slate-600">
+        <div x-show="filtered.length === 0" x-cloak class="bg-white rounded-2xl border border-slate-200/80 p-10 text-center text-slate-600">
             No open positions match your current filter. Please check back or inquire with our Human Resource Management Section.
         </div>
 
         <div class="space-y-5">
             <template x-for="job in filtered" :key="job.id">
-                <article x-data="{ open: false }" class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+                <article x-data="{ open: false }" class="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-sm">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div>
                             <div class="flex flex-wrap items-center gap-2 mb-2">
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-50 text-cmc-teal border border-teal-200/80" x-text="job.employment_type"></span>
+                                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sky-50 text-cmc-blue border border-slate-200/80" x-text="job.employment_type"></span>
                                 <template x-if="job.salary_grade">
                                     <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 tabular-nums" x-text="job.salary_grade"></span>
                                 </template>
@@ -104,9 +104,12 @@
                                 <div class="text-sm text-slate-700 whitespace-pre-line bg-slate-50 rounded-xl p-4 border border-slate-200/70 leading-relaxed" x-text="job.qualifications"></div>
                             </div>
                         </template>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-teal-50/70 border border-cmc-teal/20 rounded-xl p-4 text-xs text-slate-700">
-                            <span>Submit application letter, PDS (CS Form 212), and PRC credentials to the HR Management Office, Capiz Medical Center, {{ $settings['location'] ?? 'Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }}.</span>
-                            <a href="{{ route('portal.contact') }}" class="font-semibold text-cmc-teal hover:underline shrink-0">Inquire via Assistance Desk &rarr;</a>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-sky-50/60 border border-slate-200/80 rounded-xl p-4 text-xs text-slate-700">
+                            <span>
+                                Submit application letter, PDS (CS Form 212), and PRC credentials to HR Management Office, Capiz Medical Center,
+                                <a href="{{ $settings['google_maps_url'] ?? 'https://www.google.com/maps/search/?api=1&query=Roxas+Memorial+Provincial+Hospital+Outpatient+Department,+Brgy.+Lanot,+Roxas+City,+Capiz' }}" target="_blank" rel="noopener noreferrer" class="font-semibold text-cmc-blue hover:text-cmc-navy underline underline-offset-2">{{ $settings['location'] ?? 'Brgy. Lanot, Roxas City, Capiz 5800, Philippines' }}</a>.
+                            </span>
+                            <a href="{{ route('portal.contact') }}" class="font-semibold text-cmc-blue hover:underline shrink-0">Inquire via Assistance Desk &rarr;</a>
                         </div>
                     </div>
                 </article>

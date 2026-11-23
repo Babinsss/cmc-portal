@@ -22,7 +22,7 @@
             <div>
                 <h2 class="text-lg font-bold text-cmc-navy">National Privacy Commission (NPC) Registration</h2>
                 <p class="text-sm text-slate-600 mt-1">
-                    Status: <span class="font-semibold text-cmc-teal">Registered Data Protection Officer &amp; Data Processing System (DPO/DPS) — RA 10173 Compliant</span>
+                    Status: <span class="font-semibold text-cmc-blue">Registered Data Protection Officer &amp; Data Processing System (DPO/DPS) — RA 10173 Compliant</span>
                 </p>
                 <p class="text-xs text-slate-600 mt-1">
                     Data Protection Officer (DPO) Contact:

@@ -7,14 +7,14 @@
         $posterUrl = $announcement->imageUrl();
     @endphp
     <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <a href="{{ route('portal.advisories') }}" class="inline-flex items-center gap-1.5 min-h-11 text-xs font-semibold text-cmc-blue hover:text-cmc-teal mb-4">
+        <a href="{{ route('portal.advisories') }}" class="inline-flex items-center gap-1.5 min-h-11 text-xs font-semibold text-cmc-blue hover:text-cmc-navy mb-4">
             &larr; Back to all advisories
         </a>
 
-        <article class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-6">
+        <article class="bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-10 shadow-sm space-y-6">
             <div class="flex flex-wrap items-center gap-2">
                 @if ($announcement->is_pinned)
-                    <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-50 text-cmc-teal border border-teal-200">Pinned Advisory</span>
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-900 border border-amber-200/80">Pinned Advisory</span>
                 @endif
                 <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-700">{{ $announcement->category }}</span>
                 <span class="text-xs text-slate-600 ml-auto tabular-nums">
