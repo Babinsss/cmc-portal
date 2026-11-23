@@ -221,7 +221,7 @@ class ExportStaticPortal extends Command
      */
     private function copyPublicAssets(string $outputDir): void
     {
-        $assetDirs = ['build', 'images', 'storage'];
+        $assetDirs = ['build', 'images', 'storage', 'documents'];
 
         foreach ($assetDirs as $dir) {
             $source = public_path($dir);

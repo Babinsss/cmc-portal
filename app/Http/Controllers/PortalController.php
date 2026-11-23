@@ -6,6 +6,7 @@ use App\Models\Announcement;
 use App\Models\Inquiry;
 use App\Models\JobPosting;
 use App\Models\PricelistCategory;
+use App\Models\PricelistItem;
 use App\Models\Service;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -32,12 +33,23 @@ class PortalController extends Controller
 
         $pricelistCategories = PricelistCategory::query()
             ->withCount('items')
-            ->with(['items' => function ($query): void {
-                $query->where('is_available', true)
-                    ->orderBy('id');
-            }])
             ->orderBy('sort_order')
             ->get();
+
+        $sampleItemsByCategory = PricelistItem::query()
+            ->whereIn('id', function ($sub): void {
+                $sub->from('pricelist_items')
+                    ->selectRaw('MIN(id)')
+                    ->where('is_available', true)
+                    ->groupBy('category_id');
+            })
+            ->get()
+            ->keyBy('category_id');
+
+        $pricelistCategories->each(function (PricelistCategory $category) use ($sampleItemsByCategory): void {
+            $sample = $sampleItemsByCategory->get($category->id);
+            $category->setRelation('items', $sample ? collect([$sample]) : collect());
+        });
 
         return view('portal.home', compact(
             'announcements',

@@ -181,7 +181,7 @@
                                     <span class="text-cmc-blue font-semibold text-sm shrink-0 group-hover:translate-x-0.5 transition" aria-hidden="true">&rarr;</span>
                                 </div>
                                 <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600 tabular-nums">
-                                    <span>{{ $category->items_count }} rates</span>
+                                    <span>{{ number_format((int) $category->items_count) }} rates</span>
                                     @if ($sampleItem)
                                         <span class="font-semibold text-cmc-navy">
                                             from &#8369;{{ number_format((float) $sampleItem->price, 2) }}
@@ -211,7 +211,7 @@
                                     <span class="text-cmc-blue font-semibold text-sm shrink-0 group-hover:translate-x-0.5 transition" aria-hidden="true">&rarr;</span>
                                 </div>
                                 <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600 tabular-nums">
-                                    <span>{{ $category->items_count }} rates</span>
+                                    <span>{{ number_format((int) $category->items_count) }} rates</span>
                                     @if ($sampleItem)
                                         <span class="font-semibold text-cmc-navy">
                                             @if ((float) $sampleItem->price <= 0)

@@ -196,4 +196,23 @@ class PortalTest extends TestCase
             ->assertSee('Dr. Emmanuel M. Palomata')
             ->assertDontSee('UTS-WABD');
     }
+
+    public function test_philhealth_pricelist_contains_updated_annex_case_rates(): void
+    {
+        $this->get('/pricelist?category=philhealth')
+            ->assertOk()
+            ->assertSee('No Balance Billing (NBB)')
+            ->assertSee('CHOLERA DUE TO VIBRIO CHOLERAE 01, BIOVAR CHOLERAE')
+            ->assertSee('CAESARIAN SECTION, PRIMARY')
+            ->assertSee('HEMODIALYSIS PROCEDURE')
+            ->assertSee('SEVERE DENGUE')
+            ->assertSee('PHILHEALTH KONSULTA PACKAGE')
+            ->assertSee('EXPANDED Z MORPH LUMBOSACRAL')
+            ->assertDontSee('PHIC-CAP')
+            ->assertDontSee('PHIC-HD');
+
+        $pdf = $this->get('/pricelist/philhealth/pdf');
+        $pdf->assertOk();
+        $this->assertStringContainsString('application/pdf', (string) $pdf->headers->get('content-type'));
+    }
 }

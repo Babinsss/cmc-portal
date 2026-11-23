@@ -71,15 +71,9 @@ class PricelistSeeder extends Seeder
             [
                 'name' => 'PhilHealth',
                 'slug' => 'philhealth',
-                'description' => 'PhilHealth All-Case Rates, No Balance Billing (NBB) eligibility for indigent/sponsored members, and Z-Benefit desk guidelines.',
+                'description' => 'Updated PhilHealth Case Rates (Annex A: Medical ICD-10, Annex B: RVS Procedures, Annex C: Excluded Benefits & Z-Benefits) and No Balance Billing (NBB) guidelines.',
                 'sort_order' => 7,
-                'items' => [
-                    ['item_code' => 'PHIC-NBB', 'name' => 'No Balance Billing (NBB) — Basic Ward Accommodation', 'unit' => 'Eligible Members', 'price' => 0.00, 'notes' => 'Zero co-pay for qualified Indigent, Sponsored, Kasambahay, and Senior Citizen members in service wards'],
-                    ['item_code' => 'PHIC-CAP', 'name' => 'Community-Acquired Pneumonia (Moderate Risk) Case Rate', 'unit' => 'Case Package', 'price' => 15000.00, 'notes' => 'Reference PhilHealth benefit deduction (subject to final ICD-10 coding)'],
-                    ['item_code' => 'PHIC-NSD', 'name' => 'Normal Spontaneous Delivery (NSD) Maternity Package', 'unit' => 'Case Package', 'price' => 6500.00, 'notes' => 'Includes Essential Intrapartum & Newborn Care'],
-                    ['item_code' => 'PHIC-CS', 'name' => 'Cesarean Section Case Rate Benefit', 'unit' => 'Case Package', 'price' => 19000.00, 'notes' => 'Includes hospital & professional fee share'],
-                    ['item_code' => 'PHIC-HD', 'name' => 'Hemodialysis Session Benefit Coverage', 'unit' => 'Per Session', 'price' => 4000.00, 'notes' => 'Verify updated PhilHealth circular at Billing Desk'],
-                ],
+                'items' => $this->philhealthItems(),
             ],
             [
                 'name' => 'Room Rates',
@@ -105,12 +99,46 @@ class PricelistSeeder extends Seeder
                 array_merge($categoryData, ['last_updated_at' => now()]),
             );
 
-            if (in_array($categoryData['slug'], ['laboratory', 'pharmacy', 'radiology', 'ultrasound'], true)) {
+            if (in_array($categoryData['slug'], ['laboratory', 'pharmacy', 'radiology', 'ultrasound', 'philhealth'], true)) {
                 $keepCodes = array_column($items, 'item_code');
-                PricelistItem::query()
+                $existingCodes = PricelistItem::query()
                     ->where('category_id', $category->id)
-                    ->whereNotIn('item_code', $keepCodes)
-                    ->delete();
+                    ->pluck('item_code')
+                    ->all();
+                $staleCodes = array_values(array_diff($existingCodes, $keepCodes));
+
+                foreach (array_chunk($staleCodes, 500) as $staleChunk) {
+                    PricelistItem::query()
+                        ->where('category_id', $category->id)
+                        ->whereIn('item_code', $staleChunk)
+                        ->delete();
+                }
+            }
+
+            if (count($items) > 100) {
+                $now = now();
+                $rows = array_map(fn (array $itemData): array => [
+                    'category_id' => $category->id,
+                    'item_code' => $itemData['item_code'],
+                    'name' => $itemData['name'],
+                    'unit' => $itemData['unit'] ?? null,
+                    'price' => $itemData['price'],
+                    'notes' => $itemData['notes'] ?? null,
+                    'is_available' => true,
+                    'updated_by' => $encoder?->id,
+                    'created_at' => $now,
+                    'updated_at' => $now,
+                ], $items);
+
+                foreach (array_chunk($rows, 500) as $chunk) {
+                    PricelistItem::query()->upsert(
+                        $chunk,
+                        ['category_id', 'item_code'],
+                        ['name', 'unit', 'price', 'notes', 'is_available', 'updated_by', 'updated_at'],
+                    );
+                }
+
+                continue;
             }
 
             foreach ($items as $itemData) {
@@ -126,6 +154,20 @@ class PricelistSeeder extends Seeder
                 );
             }
         }
+    }
+
+    /**
+     * Load the official PhilHealth Case Rates (Annex A, Annex B, Annex C, and NBB).
+     *
+     * @return list<array{item_code: string, name: string, unit: string, price: float, notes: string}>
+     */
+    private function philhealthItems(): array
+    {
+        $path = database_path('seeders/data/philhealth_case_rates.json');
+        /** @var list<array{item_code: string, name: string, unit: string, price: float, notes: string}> $decoded */
+        $decoded = json_decode((string) file_get_contents($path), true, 512, JSON_THROW_ON_ERROR);
+
+        return $decoded;
     }
 
     /**

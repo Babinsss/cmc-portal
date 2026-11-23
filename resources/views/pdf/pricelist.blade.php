@@ -125,10 +125,19 @@
     </div>
 
     @foreach ($categories as $category)
+        @php
+            $displayCount = $category->items_count ?? $category->items->count();
+            $summaryNotice = $summaryNotices[$category->id] ?? null;
+        @endphp
         <div class="category-block">
-            <h2 class="category-title">{{ $category->name }} ({{ $category->items->count() }} items)</h2>
+            <h2 class="category-title">{{ $category->name }} ({{ number_format((int) $displayCount) }} items)</h2>
             @if ($category->description)
                 <div class="category-desc">{{ $category->description }}</div>
+            @endif
+            @if ($summaryNotice)
+                <div class="category-desc" style="background-color: #fef3c7; color: #78350f; font-weight: bold;">
+                    {{ $summaryNotice }}
+                </div>
             @endif
             <table>
                 <thead>

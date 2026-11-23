@@ -45,6 +45,10 @@ class ExportStaticPortalTest extends TestCase
                 'pricelist/cmc-citizens-charter-pharmacy.pdf',
                 'pricelist/cmc-citizens-charter-radiology.pdf',
                 'pricelist/cmc-citizens-charter-ultrasound.pdf',
+                'pricelist/cmc-citizens-charter-philhealth.pdf',
+                'documents/philhealth/annex-a-medical-case-rates.pdf',
+                'documents/philhealth/annex-b-procedure-case-rates.pdf',
+                'documents/philhealth/annex-c-excluded-z-benefits.pdf',
                 'images/cmc-logo-official.jpg',
             ];
 

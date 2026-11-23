@@ -29,6 +29,7 @@ class PricelistController extends Controller
         $items = PricelistItem::query()
             ->with('category:id,name,slug')
             ->orderBy('category_id')
+            ->orderByRaw("CASE WHEN item_code = 'PHIC-NBB' THEN 0 ELSE 1 END")
             ->orderBy('name')
             ->get()
             ->map(fn (PricelistItem $item): array => [
@@ -57,17 +58,50 @@ class PricelistController extends Controller
 
     public function downloadPdf(?string $slug = null): Response
     {
-        $query = PricelistCategory::query()
-            ->with(['items' => fn ($q) => $q->orderBy('name')])
-            ->orderBy('sort_order');
+        $highlightPhilhealthCodes = [
+            'PHIC-NBB',
+            'KONSULTA',
+            '90935',
+            '59513',
+            'A97.2',
+            'A00.0',
+            'A01.0',
+            'J18.9',
+            'J18.99, Y95',
+            'I10.9',
+            'IHDAMIA',
+            'Z0011',
+        ];
 
-        if ($slug !== null) {
-            $query->where('slug', $slug);
-        }
-
-        $categories = $query->get();
+        $categories = PricelistCategory::query()
+            ->withCount('items')
+            ->when($slug !== null, fn ($query) => $query->where('slug', $slug))
+            ->orderBy('sort_order')
+            ->get();
 
         abort_if($slug !== null && $categories->isEmpty(), 404);
+
+        $summaryNotices = [];
+
+        foreach ($categories as $category) {
+            if ($category->slug === 'philhealth' && $category->items_count > 100) {
+                $featured = PricelistItem::query()
+                    ->where('category_id', $category->id)
+                    ->whereIn('item_code', $highlightPhilhealthCodes)
+                    ->orderByRaw("CASE WHEN item_code = 'PHIC-NBB' THEN 0 ELSE 1 END")
+                    ->orderBy('name')
+                    ->get();
+
+                $category->setRelation('items', $featured);
+                $summaryNotices[$category->id] = sprintf(
+                    'Showing %d key reference packages out of %s official PhilHealth case rates (Annex A Medical, Annex B Procedure, Annex C Excluded & Z-Benefits). Search the full schedule online or download the complete official Annex PDFs from the portal.',
+                    $featured->count(),
+                    number_format((int) $category->items_count),
+                );
+            } else {
+                $category->load(['items' => fn ($q) => $q->orderBy('name')]);
+            }
+        }
 
         $settings = SiteSetting::allMap();
         $generatedAt = now()->format('F d, Y h:i A');
@@ -77,6 +111,7 @@ class PricelistController extends Controller
             'settings' => $settings,
             'generatedAt' => $generatedAt,
             'singleCategory' => $slug !== null ? $categories->first() : null,
+            'summaryNotices' => $summaryNotices,
         ])->setPaper('a4', 'portrait');
 
         $filename = $slug !== null
