@@ -367,13 +367,10 @@
                     <p x-show="item.notes" class="text-xs text-slate-600 leading-relaxed text-pretty" x-text="item.notes"></p>
 
                     <div class="pt-2 border-t border-slate-100 flex items-center justify-between gap-2 text-xs">
-                        <span x-show="item.is_available" class="inline-flex items-center px-2 py-0.5 rounded-full font-semibold bg-emerald-100 text-emerald-800">
-                            Available
-                        </span>
                         <span x-show="!item.is_available" x-cloak class="inline-flex items-center px-2 py-0.5 rounded-full font-semibold bg-rose-100 text-rose-800">
                             Unavailable
                         </span>
-                        <span class="text-slate-600 tabular-nums" x-text="'Updated ' + item.updated_at"></span>
+                        <span class="text-slate-600 tabular-nums ml-auto" x-text="'Updated ' + item.updated_at"></span>
                     </div>
                 </article>
             </template>
@@ -390,14 +387,13 @@
                             <th scope="col" class="px-4 py-3.5" x-show="activeCategory === 'all'">Section</th>
                             <th scope="col" class="px-4 py-3.5">Unit / Spec</th>
                             <th scope="col" class="px-4 py-3.5 text-right">Rate (PHP)</th>
-                            <th scope="col" class="px-4 py-3.5 text-center">Status</th>
                             <th scope="col" class="px-4 py-3.5">Last Updated</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100 bg-white">
                         <template x-if="filteredItems.length === 0">
                             <tr>
-                                <td colspan="7" class="px-4 py-12 text-center text-slate-600">
+                                <td colspan="6" class="px-4 py-12 text-center text-slate-600">
                                     No matching items found. Try another keyword or switch back to <button type="button" @click="activeCategory = 'all'; activeSubgroup = 'all'; search = ''; onlyAvailable = false" class="text-cmc-blue font-semibold underline cursor-pointer">All Sections</button>.
                                 </td>
                             </tr>
@@ -415,14 +411,6 @@
                                 <td class="px-4 py-3.5 whitespace-nowrap text-right font-bold text-cmc-navy tabular-nums">
                                     <span x-show="item.unit === 'Annex C: Succeeding Sched.'" x-cloak class="text-xs font-semibold text-cmc-blue">See Schedule</span>
                                     <span x-show="item.unit !== 'Annex C: Succeeding Sched.'">&#8369;<span x-text="item.price_formatted"></span></span>
-                                </td>
-                                <td class="px-4 py-3.5 whitespace-nowrap text-center">
-                                    <span x-show="item.is_available" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
-                                        Available
-                                    </span>
-                                    <span x-show="!item.is_available" x-cloak class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-rose-100 text-rose-800">
-                                        Unavailable
-                                    </span>
                                 </td>
                                 <td class="px-4 py-3.5 whitespace-nowrap text-xs text-slate-500 tabular-nums" x-text="item.updated_at"></td>
                             </tr>

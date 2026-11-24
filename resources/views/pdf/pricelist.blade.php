@@ -143,11 +143,10 @@
                 <thead>
                     <tr>
                         <th style="width: 15%;">Item Code</th>
-                        <th style="width: 39%;">Description</th>
+                        <th style="width: 47%;">Description</th>
                         <th style="width: 15%;">Unit / Spec</th>
                         <th style="width: 13%;" class="text-right">Rate (PHP)</th>
-                        <th style="width: 10%;" class="text-center">Status</th>
-                        <th style="width: 8%;">Updated</th>
+                        <th style="width: 10%;">Updated</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -162,16 +161,11 @@
                             </td>
                             <td>{{ $item->unit ?: '—' }}</td>
                             <td class="text-right price">PHP {{ number_format((float) $item->price, 2) }}</td>
-                            <td class="text-center">
-                                <span class="{{ $item->is_available ? 'badge-avail' : 'badge-unavail' }}">
-                                    {{ $item->is_available ? 'Available' : 'Unavailable' }}
-                                </span>
-                            </td>
                             <td>{{ $item->updated_at?->format('Y-m-d') ?? '—' }}</td>
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="6" class="text-center">No items encoded in this category.</td>
+                            <td colspan="5" class="text-center">No items encoded in this category.</td>
                         </tr>
                     @endforelse
                 </tbody>
