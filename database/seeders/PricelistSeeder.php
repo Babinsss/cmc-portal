@@ -53,7 +53,7 @@ class PricelistSeeder extends Seeder
             [
                 'name' => 'Cardio Pulmonary Unit',
                 'slug' => 'cardio-pulmonary-unit',
-                'description' => 'Official Cardio Pulmonary Unit schedule: ABG, ECG, Oxygen Therapy, Mechanical & Transport Ventilators, Circuits, and Flow Sensors.',
+                'description' => 'Official Cardio Pulmonary Unit schedule: ABG, ECG, Oxygen Therapy, Mechanical & Transport Ventilators, Transport Vent. Circuit, and Flow Sensors.',
                 'sort_order' => 6,
                 'items' => [
                     ['item_code' => 'CPU-ABG', 'name' => 'ABG (Arterial Blood Gas)', 'unit' => 'Per Test', 'price' => 1326.00, 'notes' => 'Diagnostics & Respiratory Care'],
@@ -61,9 +61,7 @@ class PricelistSeeder extends Seeder
                     ['item_code' => 'CPU-O2', 'name' => 'Oxygen Therapy', 'unit' => 'Per PSI', 'price' => 0.85, 'notes' => 'OECB: PHP 70.00'],
                     ['item_code' => 'CPU-VENT-24H', 'name' => 'Mechanical & Transport Ventilator (1st 24 Hours)', 'unit' => '1st 24 Hours', 'price' => 2000.00, 'notes' => 'Ventilator Use | Succeeding rate: PHP 1,000.00 per day/use'],
                     ['item_code' => 'CPU-VENT-DAY', 'name' => 'Mechanical & Transport Ventilator (Per Day / Use)', 'unit' => 'Per Day / Use', 'price' => 1000.00, 'notes' => 'Ventilator Use | Initial 1st 24 hours: PHP 2,000.00'],
-                    ['item_code' => 'CPU-CIRC-PED', 'name' => 'Pedia Circuit', 'unit' => 'Per Set', 'price' => 2250.00, 'notes' => 'Circuits & Flow Sensors'],
-                    ['item_code' => 'CPU-CIRC-NEO', 'name' => 'Neonatal Circuit', 'unit' => 'Per Set', 'price' => 2250.00, 'notes' => 'Circuits & Flow Sensors'],
-                    ['item_code' => 'CPU-CIRC-TRN', 'name' => 'Transport Vent. Circuit', 'unit' => 'Per Set', 'price' => 2000.00, 'notes' => 'Circuits & Flow Sensors'],
+                    ['item_code' => 'CPU-CIRC-TRN', 'name' => 'Transport Vent. Circuit', 'unit' => 'Per Set', 'price' => 900.00, 'notes' => 'Circuits & Flow Sensors'],
                     ['item_code' => 'CPU-FLOW-SV300', 'name' => 'Flow Sensor (SV300 PRO)', 'unit' => 'Per Use', 'price' => 6000.00, 'notes' => 'Circuits & Flow Sensors'],
                     ['item_code' => 'CPU-FLOW-TRN', 'name' => 'Flow Sensor (Transport Ventilator)', 'unit' => 'Per Use', 'price' => 5000.00, 'notes' => 'Circuits & Flow Sensors'],
                 ],

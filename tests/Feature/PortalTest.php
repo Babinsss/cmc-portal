@@ -241,8 +241,11 @@ class PortalTest extends TestCase
             ->assertSee('Oxygen Therapy')
             ->assertSee('OECB: PHP 70.00')
             ->assertSee('1st 24 Hours')
-            ->assertSee('Pedia Circuit')
+            ->assertSee('Transport Vent. Circuit')
+            ->assertSee('900.00')
             ->assertSee('Flow Sensor (SV300 PRO)')
+            ->assertDontSee('Pedia Circuit')
+            ->assertDontSee('Neonatal Circuit')
             ->assertDontSee('CPU-ECG12')
             ->assertDontSee('CPU-2DECHO');
 
