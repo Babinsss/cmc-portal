@@ -46,6 +46,7 @@ class ExportStaticPortalTest extends TestCase
                 'pricelist/cmc-citizens-charter-central-supply-room.pdf',
                 'pricelist/cmc-citizens-charter-radiology.pdf',
                 'pricelist/cmc-citizens-charter-ultrasound.pdf',
+                'pricelist/cmc-citizens-charter-cardio-pulmonary-unit.pdf',
                 'pricelist/cmc-citizens-charter-philhealth.pdf',
                 'documents/philhealth/annex-a-medical-case-rates.pdf',
                 'documents/philhealth/annex-b-procedure-case-rates.pdf',

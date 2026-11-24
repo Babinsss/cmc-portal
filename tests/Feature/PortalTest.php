@@ -231,4 +231,23 @@ class PortalTest extends TestCase
         $pdf->assertOk();
         $this->assertStringContainsString('application/pdf', (string) $pdf->headers->get('content-type'));
     }
+
+    public function test_cardio_pulmonary_pricelist_contains_official_rates(): void
+    {
+        $this->get('/pricelist?category=cardio-pulmonary-unit')
+            ->assertOk()
+            ->assertSee('ABG (Arterial Blood Gas)')
+            ->assertSee('ECG (Electrocardiogram)')
+            ->assertSee('Oxygen Therapy')
+            ->assertSee('OECB: PHP 70.00')
+            ->assertSee('1st 24 Hours')
+            ->assertSee('Pedia Circuit')
+            ->assertSee('Flow Sensor (SV300 PRO)')
+            ->assertDontSee('CPU-ECG12')
+            ->assertDontSee('CPU-2DECHO');
+
+        $pdf = $this->get('/pricelist/cardio-pulmonary-unit/pdf');
+        $pdf->assertOk();
+        $this->assertStringContainsString('application/pdf', (string) $pdf->headers->get('content-type'));
+    }
 }

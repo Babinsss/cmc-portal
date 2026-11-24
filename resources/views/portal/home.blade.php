@@ -25,7 +25,7 @@
         'laboratory' => 'Blood chemistry, CBC & urinalysis',
         'radiology' => 'X-rays & CT scans with reading',
         'ultrasound' => 'Whole abdomen, KUB, KUBP & guided',
-        'cardio-pulmonary-unit' => 'ECG, 2D Echo & nebulization',
+        'cardio-pulmonary-unit' => 'ABG, ECG, oxygen therapy & ventilators',
         'pharmacy' => 'Essential medicines (DOH DPRI)',
         'central-supply-room' => 'Medical supplies, sutures & dialysis',
         'room-rates' => 'Service wards, private rooms & ICU',

@@ -53,13 +53,19 @@ class PricelistSeeder extends Seeder
             [
                 'name' => 'Cardio Pulmonary Unit',
                 'slug' => 'cardio-pulmonary-unit',
-                'description' => 'Electrocardiography (ECG), 2D Echocardiography, respiratory therapy, and arterial blood gas services.',
+                'description' => 'Official Cardio Pulmonary Unit schedule: ABG, ECG, Oxygen Therapy, Mechanical & Transport Ventilators, Circuits, and Flow Sensors.',
                 'sort_order' => 6,
                 'items' => [
-                    ['item_code' => 'CPU-ECG12', 'name' => '12-Lead Electrocardiogram (ECG)', 'unit' => 'Per Test', 'price' => 250.00, 'notes' => '24/7 Emergency & Inpatient'],
-                    ['item_code' => 'CPU-2DECHO', 'name' => '2D Echocardiography with Doppler', 'unit' => 'Per Exam', 'price' => 2400.00, 'notes' => 'By schedule'],
-                    ['item_code' => 'CPU-ABG', 'name' => 'Arterial Blood Gas (ABG) Analysis', 'unit' => 'Per Test', 'price' => 650.00, 'notes' => '24/7 STAT'],
-                    ['item_code' => 'CPU-NEB', 'name' => 'Nebulization Session (Unit Fee)', 'unit' => 'Per Session', 'price' => 80.00, 'notes' => 'Nebule solution billed separately'],
+                    ['item_code' => 'CPU-ABG', 'name' => 'ABG (Arterial Blood Gas)', 'unit' => 'Per Test', 'price' => 1326.00, 'notes' => 'Diagnostics & Respiratory Care'],
+                    ['item_code' => 'CPU-ECG', 'name' => 'ECG (Electrocardiogram)', 'unit' => 'Per Exam', 'price' => 423.00, 'notes' => 'Diagnostics & Respiratory Care'],
+                    ['item_code' => 'CPU-O2', 'name' => 'Oxygen Therapy', 'unit' => 'Per PSI', 'price' => 0.85, 'notes' => 'OECB: PHP 70.00'],
+                    ['item_code' => 'CPU-VENT-24H', 'name' => 'Mechanical & Transport Ventilator (1st 24 Hours)', 'unit' => '1st 24 Hours', 'price' => 2000.00, 'notes' => 'Ventilator Use | Succeeding rate: PHP 1,000.00 per day/use'],
+                    ['item_code' => 'CPU-VENT-DAY', 'name' => 'Mechanical & Transport Ventilator (Per Day / Use)', 'unit' => 'Per Day / Use', 'price' => 1000.00, 'notes' => 'Ventilator Use | Initial 1st 24 hours: PHP 2,000.00'],
+                    ['item_code' => 'CPU-CIRC-PED', 'name' => 'Pedia Circuit', 'unit' => 'Per Set', 'price' => 2250.00, 'notes' => 'Circuits & Flow Sensors'],
+                    ['item_code' => 'CPU-CIRC-NEO', 'name' => 'Neonatal Circuit', 'unit' => 'Per Set', 'price' => 2250.00, 'notes' => 'Circuits & Flow Sensors'],
+                    ['item_code' => 'CPU-CIRC-TRN', 'name' => 'Transport Vent. Circuit', 'unit' => 'Per Set', 'price' => 2000.00, 'notes' => 'Circuits & Flow Sensors'],
+                    ['item_code' => 'CPU-FLOW-SV300', 'name' => 'Flow Sensor (SV300 PRO)', 'unit' => 'Per Use', 'price' => 6000.00, 'notes' => 'Circuits & Flow Sensors'],
+                    ['item_code' => 'CPU-FLOW-TRN', 'name' => 'Flow Sensor (Transport Ventilator)', 'unit' => 'Per Use', 'price' => 5000.00, 'notes' => 'Circuits & Flow Sensors'],
                 ],
             ],
             [
@@ -93,7 +99,7 @@ class PricelistSeeder extends Seeder
                 array_merge($categoryData, ['last_updated_at' => now()]),
             );
 
-            if (in_array($categoryData['slug'], ['laboratory', 'pharmacy', 'central-supply-room', 'radiology', 'ultrasound', 'philhealth'], true)) {
+            if (in_array($categoryData['slug'], ['laboratory', 'pharmacy', 'central-supply-room', 'radiology', 'ultrasound', 'cardio-pulmonary-unit', 'philhealth'], true)) {
                 $keepCodes = array_column($items, 'item_code');
                 $existingCodes = PricelistItem::query()
                     ->where('category_id', $category->id)
