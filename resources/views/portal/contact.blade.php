@@ -7,7 +7,6 @@
     $hotline2 = $settings['hotline_2'] ?? '(036) 621-0823';
     $hotline1Tel = preg_replace('/[^0-9+]/', '', $hotline1);
     $hotline2Tel = preg_replace('/[^0-9+]/', '', $hotline2);
-    $campusMapUrl = \App\Models\SiteSetting::resolveAssetUrl('campus_map_path', 'images/cmc-campus-map.svg');
     $googleMapsUrl = $settings['google_maps_url'] ?? 'https://www.google.com/maps/search/?api=1&query=Roxas+Memorial+Provincial+Hospital+Outpatient+Department,+Brgy.+Lanot,+Roxas+City,+Capiz';
     $googleMapsEmbedUrl = $settings['google_maps_embed_url'] ?? 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31275.168499060495!2d122.71808591083985!3d11.523420600000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a5f485054ad937%3A0xdfe1c6fcffcd9ce2!2sRoxas%20Memorial%20Provincial%20Hospital%20Outpatient%20Department!5e0!3m2!1sen!2sph!4v1795160414285!5m2!1sen!2sph';
 @endphp
@@ -70,7 +69,7 @@
                         </div>
                     </div>
 
-                    <div id="campus-map" x-data="{ mapView: 'interactive' }" class="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-sm space-y-4">
+                    <div id="campus-map" class="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-sm space-y-4">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                             <div>
                                 <h2 class="text-lg font-bold text-cmc-navy text-balance">Campus Location Map</h2>
@@ -84,43 +83,13 @@
                             </a>
                         </div>
 
-                        <div class="flex flex-wrap items-center gap-2" role="tablist" aria-label="Map view options">
-                            <button type="button"
-                                    role="tab"
-                                    :aria-selected="mapView === 'interactive'"
-                                    @click="mapView = 'interactive'"
-                                    :class="mapView === 'interactive' ? 'bg-cmc-navy text-white border-cmc-navy' : 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-100'"
-                                    class="min-h-11 px-3.5 py-2 rounded-lg border text-xs font-semibold transition cursor-pointer">
-                                Interactive Google Map
-                            </button>
-                            <button type="button"
-                                    role="tab"
-                                    :aria-selected="mapView === 'offline'"
-                                    @click="mapView = 'offline'"
-                                    :class="mapView === 'offline' ? 'bg-cmc-navy text-white border-cmc-navy' : 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-100'"
-                                    class="min-h-11 px-3.5 py-2 rounded-lg border text-xs font-semibold transition cursor-pointer">
-                                Offline Campus Guide
-                            </button>
-                        </div>
-
-                        <div x-show="mapView === 'interactive'" class="aspect-[4/3] w-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
+                        <div class="aspect-[4/3] w-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
                             <iframe src="{{ $googleMapsEmbedUrl }}"
                                     title="Capiz Medical Center Location on Google Maps"
                                     class="w-full h-full border-0"
                                     allowfullscreen=""
                                     referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
-
-                        <div x-show="mapView === 'offline'" x-cloak>
-                            <img src="{{ $campusMapUrl }}"
-                                 alt="Capiz Medical Center Offline Campus Access Map"
-                                 loading="lazy"
-                                 class="w-full rounded-xl border border-slate-200 bg-slate-50">
-                        </div>
-
-                        <p class="text-xs text-slate-600 leading-relaxed text-pretty">
-                            Need offline directions inside the hospital Wi-Fi or kiosk without internet? Select <span class="font-semibold text-cmc-navy">Offline Campus Guide</span> above.
-                        </p>
                     </div>
 
                     {{-- Join Our Team Callout --}}

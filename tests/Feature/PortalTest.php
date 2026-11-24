@@ -107,13 +107,17 @@ class PortalTest extends TestCase
         ]);
     }
 
-    public function test_contact_page_embeds_official_google_map_and_offline_guide(): void
+    public function test_contact_page_embeds_official_google_map(): void
     {
         $this->get('/contact')
             ->assertOk()
             ->assertSee('https://www.google.com/maps/embed?pb=', false)
-            ->assertSee('Offline Campus Guide')
-            ->assertSee('id="campus-map"', false);
+            ->assertSee('id="campus-map"', false)
+            ->assertDontSee('Offline Campus Guide');
+
+        $this->get('/pricelist')
+            ->assertOk()
+            ->assertDontSee('Available items only');
     }
 
     public function test_pharmacy_pricelist_contains_official_august_2025_rates(): void

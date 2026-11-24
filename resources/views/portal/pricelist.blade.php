@@ -42,7 +42,6 @@
         activeCategory: @js($activeCategorySlug),
         activeSubgroup: 'all',
         search: @js($initialQuery),
-        onlyAvailable: false,
         currentPage: 1,
         perPage: 50,
         categories: @js($categoriesPayload),
@@ -64,7 +63,6 @@
             this.$watch('search', () => { this.currentPage = 1; });
             this.$watch('activeCategory', () => { this.currentPage = 1; });
             this.$watch('activeSubgroup', () => { this.currentPage = 1; });
-            this.$watch('onlyAvailable', () => { this.currentPage = 1; });
         },
         subgroupsByCategory: {
             'laboratory': [
@@ -146,25 +144,22 @@
             const found = list.find(g => g.key === subgroupKey);
             return this.matchesSubgroupRule(item, found);
         },
-        get searchAndAvailabilityItems() {
+        get searchFilteredItems() {
             const q = this.search.trim().toLowerCase();
-            if (q === '' && !this.onlyAvailable) {
+            if (q === '') {
                 return this.items;
             }
-            return this.items.filter(item => {
-                if (this.onlyAvailable && !item.is_available) return false;
-                return this.matchesSearch(item, q);
-            });
+            return this.items.filter(item => this.matchesSearch(item, q));
         },
         get categoryCounts() {
-            const counts = { all: this.searchAndAvailabilityItems.length };
-            for (const item of this.searchAndAvailabilityItems) {
+            const counts = { all: this.searchFilteredItems.length };
+            for (const item of this.searchFilteredItems) {
                 counts[item.category_slug] = (counts[item.category_slug] || 0) + 1;
             }
             return counts;
         },
         get filteredItems() {
-            const base = this.searchAndAvailabilityItems;
+            const base = this.searchFilteredItems;
             if (this.activeCategory === 'all') {
                 return base;
             }
@@ -203,7 +198,7 @@
             for (const g of groups) {
                 counts[g.key] = 0;
             }
-            for (const item of this.searchAndAvailabilityItems) {
+            for (const item of this.searchFilteredItems) {
                 if (item.category_slug !== this.activeCategory) continue;
                 counts.all = (counts.all || 0) + 1;
                 for (const g of groups) {
@@ -235,11 +230,6 @@
                 </div>
 
                 <div class="flex flex-wrap items-center gap-3">
-                    <label class="inline-flex items-center gap-2 min-h-11 text-xs font-medium text-slate-700 bg-slate-50 px-3.5 py-2 rounded-lg border border-slate-200/80 cursor-pointer select-none">
-                        <input type="checkbox" x-model="onlyAvailable" class="h-4 w-4 rounded border-slate-300 text-cmc-blue focus:ring-cmc-blue">
-                        Available items only
-                    </label>
-
                     <a :href="currentPdfUrl" target="_blank" rel="noopener noreferrer"
                        class="inline-flex items-center gap-2 min-h-11 px-4 py-2 rounded-lg bg-cmc-navy text-white text-xs font-semibold hover:bg-cmc-blue transition">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
@@ -261,8 +251,8 @@
 
                 <div class="text-xs text-slate-600 tabular-nums">
                     Showing <span class="font-bold text-cmc-navy" x-text="pageStart.toLocaleString() + '–' + pageEnd.toLocaleString()"></span> of <span class="font-bold text-cmc-navy" x-text="filteredItems.length.toLocaleString()"></span> matching rates (<span x-text="items.length.toLocaleString()"></span> total)
-                    <button type="button" x-show="search !== '' || activeCategory !== 'all' || onlyAvailable || activeSubgroup !== 'all'" x-cloak
-                            @click="search = ''; activeCategory = 'all'; activeSubgroup = 'all'; onlyAvailable = false"
+                    <button type="button" x-show="search !== '' || activeCategory !== 'all' || activeSubgroup !== 'all'" x-cloak
+                            @click="search = ''; activeCategory = 'all'; activeSubgroup = 'all'"
                             class="ml-2 inline-flex items-center min-h-11 px-1.5 text-cmc-blue font-semibold underline underline-offset-2 cursor-pointer">
                         Reset
                     </button>
@@ -348,7 +338,7 @@
             <template x-if="filteredItems.length === 0">
                 <div class="bg-white rounded-2xl border border-slate-200/80 p-8 text-center text-sm text-slate-600">
                     No matching items found. Try another keyword or switch back to
-                    <button type="button" @click="activeCategory = 'all'; activeSubgroup = 'all'; search = ''; onlyAvailable = false" class="text-cmc-blue font-semibold underline cursor-pointer">All Sections</button>.
+                    <button type="button" @click="activeCategory = 'all'; activeSubgroup = 'all'; search = ''" class="text-cmc-blue font-semibold underline cursor-pointer">All Sections</button>.
                 </div>
             </template>
 
@@ -401,7 +391,7 @@
                         <template x-if="filteredItems.length === 0">
                             <tr>
                                 <td colspan="6" class="px-4 py-12 text-center text-slate-600">
-                                    No matching items found. Try another keyword or switch back to <button type="button" @click="activeCategory = 'all'; activeSubgroup = 'all'; search = ''; onlyAvailable = false" class="text-cmc-blue font-semibold underline cursor-pointer">All Sections</button>.
+                                    No matching items found. Try another keyword or switch back to <button type="button" @click="activeCategory = 'all'; activeSubgroup = 'all'; search = ''" class="text-cmc-blue font-semibold underline cursor-pointer">All Sections</button>.
                                 </td>
                             </tr>
                         </template>
