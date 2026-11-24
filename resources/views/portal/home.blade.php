@@ -28,7 +28,7 @@
         'cardio-pulmonary-unit' => 'ABG, ECG, oxygen therapy & ventilators',
         'pharmacy' => 'Essential medicines (DOH DPRI)',
         'central-supply-room' => 'Medical supplies, sutures & dialysis',
-        'room-rates' => 'Service wards, private rooms & ICU',
+        'room-rates' => 'Ward, private, Veterans, ICU & OR',
         'philhealth' => 'Case packages & No Balance Billing',
     ];
 

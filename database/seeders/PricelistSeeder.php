@@ -78,14 +78,25 @@ class PricelistSeeder extends Seeder
             [
                 'name' => 'Room Rates',
                 'slug' => 'room-rates',
-                'description' => 'Authorized inpatient accommodation rates across service wards, semi-private rooms, private rooms, and intensive care units.',
+                'description' => 'Official Hospital Room, Ward, ICU/NICU, Delivery, Recovery, and Operating Room Rates (as of June 20, 2026 per Ordinance No. 367, s.2024).',
                 'sort_order' => 8,
                 'items' => [
-                    ['item_code' => 'RM-WARD', 'name' => 'Service Ward Bed (General Medicine / Surgery / OB / Pedia)', 'unit' => 'Per Day', 'price' => 400.00, 'notes' => 'Covered under NBB for qualified PhilHealth members'],
-                    ['item_code' => 'RM-SEMI', 'name' => 'Semi-Private Room (2-Bed Airconditioned)', 'unit' => 'Per Day', 'price' => 950.00, 'notes' => 'Shared bathroom and airconditioning'],
-                    ['item_code' => 'RM-PRIV', 'name' => 'Private Room (Single Airconditioned)', 'unit' => 'Per Day', 'price' => 1800.00, 'notes' => 'Private CR, patient bed, and watcher sofa'],
-                    ['item_code' => 'RM-SUITE', 'name' => 'Deluxe Private Room', 'unit' => 'Per Day', 'price' => 2600.00, 'notes' => 'Subject to room availability'],
-                    ['item_code' => 'RM-ICU', 'name' => 'Intensive Care Unit (ICU / NICU)', 'unit' => 'Per Day', 'price' => 2500.00, 'notes' => 'Continuous bedside monitoring'],
+                    ['item_code' => 'RM-ER', 'name' => 'Emergency Room', 'unit' => 'Per Use', 'price' => 100.00, 'notes' => 'Ordinance No. 367, s.2024 (As of June 20, 2026)'],
+                    ['item_code' => 'RM-WARD', 'name' => 'Basic / Ward', 'unit' => 'Per Day', 'price' => 300.00, 'notes' => 'Covered under NBB for qualified PhilHealth members | Ordinance No. 367, s.2024'],
+                    ['item_code' => 'RM-VET-AC', 'name' => 'Veterans Room (Air Conditioned)', 'unit' => 'Per Day', 'price' => 1600.00, 'notes' => 'Ordinance No. 367, s.2024 (As of June 20, 2026)'],
+                    ['item_code' => 'RM-VET-SH', 'name' => 'Veterans Room (Air Conditioned - Sharing)', 'unit' => 'Per Day', 'price' => 1400.00, 'notes' => 'Ordinance No. 367, s.2024 (As of June 20, 2026)'],
+                    ['item_code' => 'RM-PRIV-AC', 'name' => 'Private Room (Air Conditioned)', 'unit' => 'Per Day', 'price' => 1600.00, 'notes' => 'Ordinance No. 367, s.2024 (As of June 20, 2026)'],
+                    ['item_code' => 'RM-PRIV-FAN', 'name' => 'Private Room (Electric Fan)', 'unit' => 'Per Day', 'price' => 1000.00, 'notes' => 'Ordinance No. 367, s.2024 (As of June 20, 2026)'],
+                    ['item_code' => 'RM-ICU-PRIV', 'name' => 'ICU (From Private Accommodation)', 'unit' => 'Per Day', 'price' => 1500.00, 'notes' => 'Intensive Care Unit | From Ward Accommodation: PHP 1,000.00'],
+                    ['item_code' => 'RM-ICU-WARD', 'name' => 'ICU (From Ward Accommodation)', 'unit' => 'Per Day', 'price' => 1000.00, 'notes' => 'Intensive Care Unit | From Private Accommodation: PHP 1,500.00'],
+                    ['item_code' => 'RM-NICU-PRIV', 'name' => 'NICU (From Private Accommodation)', 'unit' => 'Per Day', 'price' => 800.00, 'notes' => 'Neonatal Intensive Care Unit | From Ward Accommodation: PHP 600.00'],
+                    ['item_code' => 'RM-NICU-WARD', 'name' => 'NICU (From Ward Accommodation)', 'unit' => 'Per Day', 'price' => 600.00, 'notes' => 'Neonatal Intensive Care Unit | From Private Accommodation: PHP 800.00'],
+                    ['item_code' => 'RM-DR-PRIV', 'name' => 'Delivery Room Fee (From Private Accommodation)', 'unit' => 'Per Use', 'price' => 1600.00, 'notes' => 'From Ward Accommodation: PHP 1,200.00'],
+                    ['item_code' => 'RM-DR-WARD', 'name' => 'Delivery Room Fee (From Ward Accommodation)', 'unit' => 'Per Use', 'price' => 1200.00, 'notes' => 'From Private Accommodation: PHP 1,600.00'],
+                    ['item_code' => 'RM-RR-PRIV', 'name' => 'Recovery Room Fee (From Private Accommodation)', 'unit' => 'Per Use', 'price' => 400.00, 'notes' => 'From Ward Accommodation: PHP 200.00'],
+                    ['item_code' => 'RM-RR-WARD', 'name' => 'Recovery Room Fee (From Ward Accommodation)', 'unit' => 'Per Use', 'price' => 200.00, 'notes' => 'From Private Accommodation: PHP 400.00'],
+                    ['item_code' => 'RM-OR-MIN', 'name' => 'Operating Room Fee (Minor Operation)', 'unit' => 'Per Procedure', 'price' => 1600.00, 'notes' => 'Major Operation fee: PHP 3,500.00'],
+                    ['item_code' => 'RM-OR-MAJ', 'name' => 'Operating Room Fee (Major Operation)', 'unit' => 'Per Procedure', 'price' => 3500.00, 'notes' => 'Minor Operation fee: PHP 1,600.00'],
                 ],
             ],
         ];
@@ -99,20 +110,18 @@ class PricelistSeeder extends Seeder
                 array_merge($categoryData, ['last_updated_at' => now()]),
             );
 
-            if (in_array($categoryData['slug'], ['laboratory', 'pharmacy', 'central-supply-room', 'radiology', 'ultrasound', 'cardio-pulmonary-unit', 'philhealth'], true)) {
-                $keepCodes = array_column($items, 'item_code');
-                $existingCodes = PricelistItem::query()
-                    ->where('category_id', $category->id)
-                    ->pluck('item_code')
-                    ->all();
-                $staleCodes = array_values(array_diff($existingCodes, $keepCodes));
+            $keepCodes = array_column($items, 'item_code');
+            $existingCodes = PricelistItem::query()
+                ->where('category_id', $category->id)
+                ->pluck('item_code')
+                ->all();
+            $staleCodes = array_values(array_diff($existingCodes, $keepCodes));
 
-                foreach (array_chunk($staleCodes, 500) as $staleChunk) {
-                    PricelistItem::query()
-                        ->where('category_id', $category->id)
-                        ->whereIn('item_code', $staleChunk)
-                        ->delete();
-                }
+            foreach (array_chunk($staleCodes, 500) as $staleChunk) {
+                PricelistItem::query()
+                    ->where('category_id', $category->id)
+                    ->whereIn('item_code', $staleChunk)
+                    ->delete();
             }
 
             if (count($items) > 100) {

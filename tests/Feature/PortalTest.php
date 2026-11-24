@@ -250,4 +250,22 @@ class PortalTest extends TestCase
         $pdf->assertOk();
         $this->assertStringContainsString('application/pdf', (string) $pdf->headers->get('content-type'));
     }
+
+    public function test_room_rates_pricelist_contains_june_2026_ordinance_schedule(): void
+    {
+        $this->get('/pricelist?category=room-rates')
+            ->assertOk()
+            ->assertSee('Emergency Room')
+            ->assertSee('Veterans Room (Air Conditioned)')
+            ->assertSee('Private Room (Air Conditioned)')
+            ->assertSee('ICU (From Private Accommodation)')
+            ->assertSee('NICU (From Ward Accommodation)')
+            ->assertSee('Operating Room Fee (Major Operation)')
+            ->assertDontSee('RM-SEMI')
+            ->assertDontSee('Deluxe Private Room');
+
+        $pdf = $this->get('/pricelist/room-rates/pdf');
+        $pdf->assertOk();
+        $this->assertStringContainsString('application/pdf', (string) $pdf->headers->get('content-type'));
+    }
 }
