@@ -27,7 +27,7 @@
         'ultrasound' => 'Whole abdomen, KUB, KUBP & guided',
         'cardio-pulmonary-unit' => 'ECG, 2D Echo & nebulization',
         'pharmacy' => 'Essential medicines (DOH DPRI)',
-        'central-supply-room' => 'Syringes, IV sets & dressings',
+        'central-supply-room' => 'Medical supplies, sutures & dialysis',
         'room-rates' => 'Service wards, private rooms & ICU',
         'philhealth' => 'Case packages & No Balance Billing',
     ];

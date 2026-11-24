@@ -43,6 +43,7 @@ class ExportStaticPortalTest extends TestCase
                 'pricelist/cmc-citizens-charter-complete-pricelist.pdf',
                 'pricelist/cmc-citizens-charter-laboratory.pdf',
                 'pricelist/cmc-citizens-charter-pharmacy.pdf',
+                'pricelist/cmc-citizens-charter-central-supply-room.pdf',
                 'pricelist/cmc-citizens-charter-radiology.pdf',
                 'pricelist/cmc-citizens-charter-ultrasound.pdf',
                 'pricelist/cmc-citizens-charter-philhealth.pdf',

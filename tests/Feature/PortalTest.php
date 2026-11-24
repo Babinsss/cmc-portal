@@ -215,4 +215,20 @@ class PortalTest extends TestCase
         $pdf->assertOk();
         $this->assertStringContainsString('application/pdf', (string) $pdf->headers->get('content-type'));
     }
+
+    public function test_csr_pricelist_contains_official_october_2026_rates(): void
+    {
+        $this->get('/pricelist?category=central-supply-room')
+            ->assertOk()
+            ->assertSee('3 WAY FOLEY CATHETER FR.18')
+            ->assertSee('ETHILON 3.0 CUTTING')
+            ->assertSee('HEMODIALYSIS ACID CONCENTRATE')
+            ->assertSee('VENTILATOR TUBING SET, ADULT')
+            ->assertSee('Supplier: JOSMEF')
+            ->assertDontSee('CSR-IVC20');
+
+        $pdf = $this->get('/pricelist/central-supply-room/pdf');
+        $pdf->assertOk();
+        $this->assertStringContainsString('application/pdf', (string) $pdf->headers->get('content-type'));
+    }
 }

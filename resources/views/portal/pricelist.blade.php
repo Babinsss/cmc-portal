@@ -84,6 +84,13 @@
                 { key: 'non-consigned-iv', label: 'Non-Consigned: IV Fluids', prefixes: ['PHM-NC-IV-'] },
                 { key: 'non-consigned-med', label: 'Non-Consigned: Medicines', prefixes: ['PHM-NC-MD-'] },
             ],
+            'central-supply-room': [
+                { key: 'all', label: 'All CSR Supplies', prefixes: [] },
+                { key: 'med', label: 'Medical Supplies', prefixes: ['CSR-MED-'] },
+                { key: 'sut', label: 'Sutures', prefixes: ['CSR-SUT-'] },
+                { key: 'dia', label: 'Dialysis', prefixes: ['CSR-DIA-'] },
+                { key: 'cpu', label: 'Cardio Pulmonary', prefixes: ['CSR-CPU-'] },
+            ],
             'radiology': [
                 { key: 'all', label: 'All Radiology', prefixes: [] },
                 { key: 'xray-all', label: 'X-Ray: All', prefixes: ['RAD-XR-'] },

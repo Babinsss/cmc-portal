@@ -1,0 +1,2879 @@
+[
+  {
+    "item_code": "CSR-MED-001",
+    "name": "3 WAY FOLEY CATHETER FR.18",
+    "unit": "Supplier: JOSMEF",
+    "price": 234.0,
+    "notes": "Medical Supplies | Item #1 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-002",
+    "name": "3 WAY FOLEY CATHETER FR.20",
+    "unit": "Supplier: JOSMEF",
+    "price": 234.0,
+    "notes": "Medical Supplies | Item #2 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-003",
+    "name": "3 WAY FOLEY CATHETER FR.22",
+    "unit": "Supplier: JOSMEF",
+    "price": 234.0,
+    "notes": "Medical Supplies | Item #3 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-004",
+    "name": "4X4 GAUZE PAD",
+    "unit": "Supplier: BEROVAN",
+    "price": 7.5,
+    "notes": "Medical Supplies | Item #4 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-005",
+    "name": "4X4 GAUZE PAD",
+    "unit": "Supplier: MHJ",
+    "price": 4.0,
+    "notes": "Medical Supplies | Item #4 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-006",
+    "name": "4X4 GAUZE PAD",
+    "unit": "Supplier: JETVINZ",
+    "price": 5.0,
+    "notes": "Medical Supplies | Item #4 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-007",
+    "name": "4X5 GAUZE PAD",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 6.0,
+    "notes": "Medical Supplies | Item #4 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-008",
+    "name": "ALCOHOL 70% SPRAY (250ML)",
+    "unit": "Supplier: MHJ",
+    "price": 102.0,
+    "notes": "Medical Supplies | Item #5 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-009",
+    "name": "ANESTHESIA BREATHING CIRCUIT ADULT",
+    "unit": "Supplier: MHJ",
+    "price": 1820.0,
+    "notes": "Medical Supplies | Item #6 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-010",
+    "name": "ANESTHESIA BREATHING CIRCUIT ADULT",
+    "unit": "Supplier: JOSMEF",
+    "price": 1300.0,
+    "notes": "Medical Supplies | Item #6 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-011",
+    "name": "ANESTHESIA BREATHING CIRCUIT PEDIA",
+    "unit": "Supplier: MHJ",
+    "price": 1755.0,
+    "notes": "Medical Supplies | Item #7 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-012",
+    "name": "ANGIOGRAPHIC SYRINGE",
+    "unit": "Supplier: JOSMEF",
+    "price": 1950.0,
+    "notes": "Medical Supplies | Item #8 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-013",
+    "name": "ARM SLING (ADULT)",
+    "unit": "Supplier: CSR",
+    "price": 100.0,
+    "notes": "Medical Supplies | Item #9 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-014",
+    "name": "ARM SLING (PEDIA)",
+    "unit": "Supplier: CSR",
+    "price": 100.0,
+    "notes": "Medical Supplies | Item #10 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-015",
+    "name": "ARMORED ET TUBE 6.5",
+    "unit": "Supplier: JOSMEF",
+    "price": 325.0,
+    "notes": "Medical Supplies | Item #11 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-016",
+    "name": "ARMORED ET TUBE 7.0",
+    "unit": "Supplier: JOSMEF",
+    "price": 325.0,
+    "notes": "Medical Supplies | Item #12 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-017",
+    "name": "ARMORED ET TUBE 7.5",
+    "unit": "Supplier: JOSMEF",
+    "price": 325.0,
+    "notes": "Medical Supplies | Item #13 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-018",
+    "name": "ARMORED ET TUBE 8.0",
+    "unit": "Supplier: JOSMEF",
+    "price": 325.0,
+    "notes": "Medical Supplies | Item #14 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-019",
+    "name": "ASEPTO SYRINGE",
+    "unit": "Supplier: MHJ",
+    "price": 71.5,
+    "notes": "Medical Supplies | Item #15 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-020",
+    "name": "BLOODSET",
+    "unit": "Supplier: BEROVAN",
+    "price": 137.0,
+    "notes": "Medical Supplies | Item #16 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-021",
+    "name": "BONEWAX",
+    "unit": "Supplier: BEROVAN",
+    "price": 360.0,
+    "notes": "Medical Supplies | Item #17 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-022",
+    "name": "BRACELET ADULT (WHITE)",
+    "unit": "Supplier: MHJ",
+    "price": 5.2,
+    "notes": "Medical Supplies | Item #18 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-023",
+    "name": "BRACELET ADULT (WHITE)",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 6.0,
+    "notes": "Medical Supplies | Item #18 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-024",
+    "name": "BRACELET PEDIA (BLUE)",
+    "unit": "Supplier: CSR",
+    "price": 12.0,
+    "notes": "Medical Supplies | Item #19 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-025",
+    "name": "BRACELET PEDIA (BLUE)",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 6.0,
+    "notes": "Medical Supplies | Item #19 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-026",
+    "name": "BRACELET PEDIA (PINK)",
+    "unit": "Supplier: CSR",
+    "price": 12.0,
+    "notes": "Medical Supplies | Item #20 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-027",
+    "name": "BRACELET PEDIA (PINK)",
+    "unit": "Supplier: MHJ",
+    "price": 5.0,
+    "notes": "Medical Supplies | Item #20 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-028",
+    "name": "CADAVER BAG",
+    "unit": "Supplier: GREEN MEDICS",
+    "price": 897.0,
+    "notes": "Medical Supplies | Item #21 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-029",
+    "name": "CADAVER BAG",
+    "unit": "Supplier: MHJ",
+    "price": 819.0,
+    "notes": "Medical Supplies | Item #21 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-030",
+    "name": "CADAVER BAG",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 1035.0,
+    "notes": "Medical Supplies | Item #21 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-031",
+    "name": "CAUTERY PAD",
+    "unit": "Supplier: PINNACLE",
+    "price": 611.0,
+    "notes": "Medical Supplies | Item #22 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-032",
+    "name": "CAUTERY PAD",
+    "unit": "Supplier: BEROVAN",
+    "price": 650.0,
+    "notes": "Medical Supplies | Item #22 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-033",
+    "name": "CAUTERY PAD",
+    "unit": "Supplier: JOSMEF",
+    "price": 390.0,
+    "notes": "Medical Supplies | Item #22 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-034",
+    "name": "CAUTERY PENCIL",
+    "unit": "Supplier: BEROVAN",
+    "price": 210.0,
+    "notes": "Medical Supplies | Item #23 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-035",
+    "name": "CBG PACK",
+    "unit": "Supplier: MHJ",
+    "price": 100.0,
+    "notes": "Medical Supplies | Item #24 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-036",
+    "name": "CBG PACK",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 100.0,
+    "notes": "Medical Supplies | Item #24 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-037",
+    "name": "CHERRY BALLS",
+    "unit": "Supplier: MHJ",
+    "price": 267.0,
+    "notes": "Medical Supplies | Item #25 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-038",
+    "name": "CIRCULAR STAPLER 25MM",
+    "unit": "Supplier: JOSMEF",
+    "price": 21190.0,
+    "notes": "Medical Supplies | Item #26 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-039",
+    "name": "CIRCULAR STAPLER 29MM",
+    "unit": "Supplier: JOSMEF",
+    "price": 21190.0,
+    "notes": "Medical Supplies | Item #27 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-040",
+    "name": "CIRCULAR STAPLER 32MM",
+    "unit": "Supplier: JOSMEF",
+    "price": 21190.0,
+    "notes": "Medical Supplies | Item #28 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-041",
+    "name": "CORD CLAMP",
+    "unit": "Supplier: B-SHINE",
+    "price": 7.0,
+    "notes": "Medical Supplies | Item #29 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-042",
+    "name": "CORD CLAMP",
+    "unit": "Supplier: MHJ",
+    "price": 7.5,
+    "notes": "Medical Supplies | Item #29 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-043",
+    "name": "CORD CLAMP",
+    "unit": "Supplier: NEGROS",
+    "price": 6.0,
+    "notes": "Medical Supplies | Item #29 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-044",
+    "name": "CORD CLAMP",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 4.0,
+    "notes": "Medical Supplies | Item #29 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-045",
+    "name": "COTTON APPLICATOR",
+    "unit": "Supplier: MHJ",
+    "price": 4.0,
+    "notes": "Medical Supplies | Item #30 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-046",
+    "name": "COTTON APPLICATOR",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 3.64,
+    "notes": "Medical Supplies | Item #30 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-047",
+    "name": "COTTON BALLS",
+    "unit": "Supplier: MHJ",
+    "price": 26.0,
+    "notes": "Medical Supplies | Item #31 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-048",
+    "name": "COTTON BALLS STERILE W/ BETADINE SET",
+    "unit": "Supplier: CSR",
+    "price": 120.0,
+    "notes": "Medical Supplies | Item #32 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-049",
+    "name": "COTTON BALLS W/ BETADINE SET",
+    "unit": "Supplier: CSR",
+    "price": 3.0,
+    "notes": "Medical Supplies | Item #33 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-050",
+    "name": "CUTASEPT",
+    "unit": "Supplier: MHJ",
+    "price": 1040.0,
+    "notes": "Medical Supplies | Item #34 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-051",
+    "name": "DIAPER ADULT",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 33.0,
+    "notes": "Medical Supplies | Item #35 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-052",
+    "name": "DIAPER ADULT",
+    "unit": "Supplier: JETVINZ",
+    "price": 52.0,
+    "notes": "Medical Supplies | Item #35 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-053",
+    "name": "DIAPER ADULT",
+    "unit": "Supplier: BEROVAN",
+    "price": 59.0,
+    "notes": "Medical Supplies | Item #35 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-054",
+    "name": "DIAPER ADULT",
+    "unit": "Supplier: PT CERNA",
+    "price": 36.4,
+    "notes": "Medical Supplies | Item #35 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-055",
+    "name": "DIGITAL THERMOMETER",
+    "unit": "Supplier: MHJ",
+    "price": 110.0,
+    "notes": "Medical Supplies | Item #36 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-056",
+    "name": "DIGITAL THERMOMETER",
+    "unit": "Supplier: NKC",
+    "price": 117.0,
+    "notes": "Medical Supplies | Item #36 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-057",
+    "name": "DIGITAL THERMOMETER",
+    "unit": "Supplier: JOSMEF",
+    "price": 99.0,
+    "notes": "Medical Supplies | Item #36 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-058",
+    "name": "DIGITAL THERMOMETER",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 112.0,
+    "notes": "Medical Supplies | Item #36 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-059",
+    "name": "DISPOSABLE ISOLATION GOWN",
+    "unit": "Supplier: CSR",
+    "price": 180.0,
+    "notes": "Medical Supplies | Item #37 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-060",
+    "name": "DISPOSABLE NEEDLE G.18",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 7.0,
+    "notes": "Medical Supplies | Item #38 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-061",
+    "name": "DISPOSABLE NEEDLE G.20",
+    "unit": "Supplier: NKC",
+    "price": 20.0,
+    "notes": "Medical Supplies | Item #39 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-062",
+    "name": "DISPOSABLE UNDERPADS",
+    "unit": "Supplier: BEROVAN",
+    "price": 104.0,
+    "notes": "Medical Supplies | Item #40 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-063",
+    "name": "E.T TUBE S. 2.0",
+    "unit": "Supplier: MHJ",
+    "price": 143.0,
+    "notes": "Medical Supplies | Item #41 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-064",
+    "name": "E.T TUBE S. 2.5",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 63.7,
+    "notes": "Medical Supplies | Item #42 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-065",
+    "name": "E.T TUBE S. 2.5",
+    "unit": "Supplier: BEROVAN",
+    "price": 97.5,
+    "notes": "Medical Supplies | Item #42 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-066",
+    "name": "E.T TUBE S. 3.0",
+    "unit": "Supplier: BEROVAN",
+    "price": 91.0,
+    "notes": "Medical Supplies | Item #43 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-067",
+    "name": "E.T TUBE S. 3.0",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 63.7,
+    "notes": "Medical Supplies | Item #43 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-068",
+    "name": "E.T TUBE S. 3.5",
+    "unit": "Supplier: BEROVAN",
+    "price": 97.5,
+    "notes": "Medical Supplies | Item #44 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-069",
+    "name": "E.T TUBE S. 3.5",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 75.4,
+    "notes": "Medical Supplies | Item #44 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-070",
+    "name": "E.T TUBE S. 4.0",
+    "unit": "Supplier: BEROVAN",
+    "price": 97.5,
+    "notes": "Medical Supplies | Item #45 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-071",
+    "name": "E.T TUBE S. 4.0",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 63.7,
+    "notes": "Medical Supplies | Item #45 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-072",
+    "name": "E.T TUBE S. 4.5",
+    "unit": "Supplier: JOSMEF",
+    "price": 130.0,
+    "notes": "Medical Supplies | Item #46 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-073",
+    "name": "E.T TUBE S. 5.0",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 67.0,
+    "notes": "Medical Supplies | Item #47 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-074",
+    "name": "E.T TUBE S. 5.5",
+    "unit": "Supplier: BEROVAN",
+    "price": 97.5,
+    "notes": "Medical Supplies | Item #48 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-075",
+    "name": "E.T TUBE S. 5.5",
+    "unit": "Supplier: JOSMEF",
+    "price": 140.0,
+    "notes": "Medical Supplies | Item #48 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-076",
+    "name": "E.T TUBE S. 6.0",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 63.7,
+    "notes": "Medical Supplies | Item #49 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-077",
+    "name": "E.T TUBE S. 6.5",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 89.0,
+    "notes": "Medical Supplies | Item #50 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-078",
+    "name": "E.T TUBE S. 7.0",
+    "unit": "Supplier: JOSMEF",
+    "price": 130.0,
+    "notes": "Medical Supplies | Item #51 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-079",
+    "name": "E.T TUBE S. 7.0",
+    "unit": "Supplier: BEROVAN",
+    "price": 91.0,
+    "notes": "Medical Supplies | Item #51 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-080",
+    "name": "E.T TUBE S. 7.5",
+    "unit": "Supplier: BEROVAN",
+    "price": 91.0,
+    "notes": "Medical Supplies | Item #52 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-081",
+    "name": "E.T TUBE S. 7.5",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 63.7,
+    "notes": "Medical Supplies | Item #52 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-082",
+    "name": "E.T TUBE S. 8.0",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 67.0,
+    "notes": "Medical Supplies | Item #53 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-083",
+    "name": "ECG ELECTRODES",
+    "unit": "Supplier: JOSMEF",
+    "price": 23.4,
+    "notes": "Medical Supplies | Item #54 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-084",
+    "name": "ELASTIC BANDAGE 3\"",
+    "unit": "Supplier: MHJ",
+    "price": 52.0,
+    "notes": "Medical Supplies | Item #55 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-085",
+    "name": "ELASTIC BANDAGE 4\"",
+    "unit": "Supplier: BEROVAN",
+    "price": 39.0,
+    "notes": "Medical Supplies | Item #56 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-086",
+    "name": "ELASTIC BANDAGE 4\"",
+    "unit": "Supplier: MHJ",
+    "price": 36.0,
+    "notes": "Medical Supplies | Item #56 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-087",
+    "name": "ELASTIC BANDAGE 4\"",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 29.58,
+    "notes": "Medical Supplies | Item #56 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-088",
+    "name": "ELASTIC BANDAGE 6\"",
+    "unit": "Supplier: GREEN MEDICS",
+    "price": 88.4,
+    "notes": "Medical Supplies | Item #57 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-089",
+    "name": "ELASTIC BANDAGE 6\"",
+    "unit": "Supplier: MHJ",
+    "price": 60.0,
+    "notes": "Medical Supplies | Item #57 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-090",
+    "name": "ELASTIC BANDAGE 6\"",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 50.0,
+    "notes": "Medical Supplies | Item #57 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-091",
+    "name": "ELASTIC BANDAGE 6\"",
+    "unit": "Supplier: BEROVAN",
+    "price": 59.0,
+    "notes": "Medical Supplies | Item #57 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-092",
+    "name": "EPIDURAL CATHETER G.18",
+    "unit": "Supplier: MHJ",
+    "price": 1830.4,
+    "notes": "Medical Supplies | Item #58 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-093",
+    "name": "EXTENTION TUBING",
+    "unit": "Supplier: JOSMEF",
+    "price": 65.0,
+    "notes": "Medical Supplies | Item #59 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-094",
+    "name": "FACE SHIELD",
+    "unit": "Supplier: CSR",
+    "price": 100.0,
+    "notes": "Medical Supplies | Item #60 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-095",
+    "name": "FACEMASK EARLOOP",
+    "unit": "Supplier: MHJ",
+    "price": 2.6,
+    "notes": "Medical Supplies | Item #61 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-096",
+    "name": "FOLEY CATHETER FR. 8",
+    "unit": "Supplier: MHJ",
+    "price": 60.0,
+    "notes": "Medical Supplies | Item #62 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-097",
+    "name": "FOLEY CATHETER FR. 10",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 46.0,
+    "notes": "Medical Supplies | Item #63 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-098",
+    "name": "FOLEY CATHETER FR. 12",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 46.0,
+    "notes": "Medical Supplies | Item #64 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-099",
+    "name": "FOLEY CATHETER FR. 12",
+    "unit": "Supplier: MHJ",
+    "price": 60.0,
+    "notes": "Medical Supplies | Item #64 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-100",
+    "name": "FOLEY CATHETER FR. 14",
+    "unit": "Supplier: MHJ",
+    "price": 60.0,
+    "notes": "Medical Supplies | Item #65 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-101",
+    "name": "FOLEY CATHETER FR. 14",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 46.0,
+    "notes": "Medical Supplies | Item #65 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-102",
+    "name": "FOLEY CATHETER FR. 16",
+    "unit": "Supplier: MHJ",
+    "price": 60.0,
+    "notes": "Medical Supplies | Item #66 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-103",
+    "name": "FOLEY CATHETER FR. 16",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 44.0,
+    "notes": "Medical Supplies | Item #66 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-104",
+    "name": "FOLEY CATHETER FR. 18",
+    "unit": "Supplier: MHJ",
+    "price": 60.0,
+    "notes": "Medical Supplies | Item #67 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-105",
+    "name": "GAUZE OR 4X4X8",
+    "unit": "Supplier: MHJ",
+    "price": 91.0,
+    "notes": "Medical Supplies | Item #68 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-106",
+    "name": "GAUZE PACK ORG 4X8X8",
+    "unit": "Supplier: MHJ",
+    "price": 129.35,
+    "notes": "Medical Supplies | Item #69 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-107",
+    "name": "GAUZE PACK SPONGE 8X12X12",
+    "unit": "Supplier: MHJ",
+    "price": 130.0,
+    "notes": "Medical Supplies | Item #70 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-108",
+    "name": "GAUZE PACK SPONGE 8X36X12",
+    "unit": "Supplier: MHJ",
+    "price": 220.68,
+    "notes": "Medical Supplies | Item #71 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-109",
+    "name": "GIGGLE WIRE",
+    "unit": "Supplier: CSR",
+    "price": 2525.0,
+    "notes": "Medical Supplies | Item #72 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-110",
+    "name": "GLOVES UNSTERILE, LARGE",
+    "unit": "Supplier: CSR",
+    "price": 3.89,
+    "notes": "Medical Supplies | Item #73 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-111",
+    "name": "GLOVES UNSTERILE, LARGE",
+    "unit": "Supplier: JOSMEF",
+    "price": 7.0,
+    "notes": "Medical Supplies | Item #73 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-112",
+    "name": "GLOVES UNSTERILE, LARGE",
+    "unit": "Supplier: MHJ",
+    "price": 3.0,
+    "notes": "Medical Supplies | Item #73 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-113",
+    "name": "GLOVES UNSTERILE, LARGE",
+    "unit": "Supplier: NEGROS",
+    "price": 3.0,
+    "notes": "Medical Supplies | Item #73 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-114",
+    "name": "GLOVES UNSTERILE, LARGE",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 4.0,
+    "notes": "Medical Supplies | Item #73 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-115",
+    "name": "GLOVES UNSTERILE , MEDIUM",
+    "unit": "Supplier: MHJ",
+    "price": 3.89,
+    "notes": "Medical Supplies | Item #74 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-116",
+    "name": "GLOVES UNSTERILE , MEDIUM",
+    "unit": "Supplier: NEGROS",
+    "price": 3.0,
+    "notes": "Medical Supplies | Item #74 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-117",
+    "name": "GLOVES UNSTERILE , MEDIUM",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 3.0,
+    "notes": "Medical Supplies | Item #74 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-118",
+    "name": "GLOVES UNSTERILE , MEDIUM",
+    "unit": "Supplier: JOSMEF",
+    "price": 7.0,
+    "notes": "Medical Supplies | Item #74 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-119",
+    "name": "GLOVES UNSTERILE , MEDIUM",
+    "unit": "Supplier: NKC",
+    "price": 5.0,
+    "notes": "Medical Supplies | Item #74 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-120",
+    "name": "GLOVES UNSTERILE , SMALL",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 3.0,
+    "notes": "Medical Supplies | Item #75 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-121",
+    "name": "GLOVES UNSTERILE , SMALL",
+    "unit": "Supplier: JOSMEF",
+    "price": 7.0,
+    "notes": "Medical Supplies | Item #75 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-122",
+    "name": "GLOVES UNSTERILE , SMALL",
+    "unit": "Supplier: BEROVAN",
+    "price": 3.12,
+    "notes": "Medical Supplies | Item #75 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-123",
+    "name": "HEPLOCK",
+    "unit": "Supplier: BEROVAN",
+    "price": 78.0,
+    "notes": "Medical Supplies | Item #76 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-124",
+    "name": "IJ CATHETER",
+    "unit": "Supplier: MHJ",
+    "price": 7149.0,
+    "notes": "Medical Supplies | Item #77 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-125",
+    "name": "IV CANNULA G.18",
+    "unit": "Supplier: B-SHINE",
+    "price": 30.55,
+    "notes": "Medical Supplies | Item #78 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-126",
+    "name": "IV CANNULA G.18",
+    "unit": "Supplier: JETVINZ",
+    "price": 38.0,
+    "notes": "Medical Supplies | Item #78 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-127",
+    "name": "IV CANNULA G.18",
+    "unit": "Supplier: NKC",
+    "price": 33.0,
+    "notes": "Medical Supplies | Item #78 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-128",
+    "name": "IV CANNULA G.18",
+    "unit": "Supplier: BEROVAN",
+    "price": 33.0,
+    "notes": "Medical Supplies | Item #78 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-129",
+    "name": "IV CANNULA G.18",
+    "unit": "Supplier: MHJ",
+    "price": 30.0,
+    "notes": "Medical Supplies | Item #78 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-130",
+    "name": "IV CANNULA G.18",
+    "unit": "Supplier: JUSAN",
+    "price": 36.0,
+    "notes": "Medical Supplies | Item #78 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-131",
+    "name": "IV CANNULA G.18",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 30.55,
+    "notes": "Medical Supplies | Item #78 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-132",
+    "name": "IV CANNULA G.20",
+    "unit": "Supplier: BEROVAN",
+    "price": 33.0,
+    "notes": "Medical Supplies | Item #79 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-133",
+    "name": "IV CANNULA G.20",
+    "unit": "Supplier: B-SHINE",
+    "price": 30.55,
+    "notes": "Medical Supplies | Item #79 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-134",
+    "name": "IV CANNULA G.20",
+    "unit": "Supplier: MHJ",
+    "price": 30.0,
+    "notes": "Medical Supplies | Item #79 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-135",
+    "name": "IV CANNULA G.20",
+    "unit": "Supplier: NEGROS",
+    "price": 39.0,
+    "notes": "Medical Supplies | Item #79 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-136",
+    "name": "IV CANNULA G.20",
+    "unit": "Supplier: JOSMEF",
+    "price": 33.0,
+    "notes": "Medical Supplies | Item #79 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-137",
+    "name": "IV CANNULA G.20",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 30.55,
+    "notes": "Medical Supplies | Item #79 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-138",
+    "name": "IV CANNULA G.20",
+    "unit": "Supplier: JUSAN",
+    "price": 36.0,
+    "notes": "Medical Supplies | Item #79 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-139",
+    "name": "IV CANNULA G.22",
+    "unit": "Supplier: B-SHINE",
+    "price": 30.55,
+    "notes": "Medical Supplies | Item #80 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-140",
+    "name": "IV CANNULA G.22",
+    "unit": "Supplier: JETVINZ",
+    "price": 38.0,
+    "notes": "Medical Supplies | Item #80 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-141",
+    "name": "IV CANNULA G.22",
+    "unit": "Supplier: JOSMEF",
+    "price": 33.0,
+    "notes": "Medical Supplies | Item #80 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-142",
+    "name": "IV CANNULA G.22",
+    "unit": "Supplier: JUSAN",
+    "price": 36.0,
+    "notes": "Medical Supplies | Item #80 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-143",
+    "name": "IV CANNULA G.22",
+    "unit": "Supplier: NKC",
+    "price": 33.0,
+    "notes": "Medical Supplies | Item #80 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-144",
+    "name": "IV CANNULA G.22",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 30.55,
+    "notes": "Medical Supplies | Item #80 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-145",
+    "name": "IV CANNULA G.22",
+    "unit": "Supplier: MHJ",
+    "price": 32.5,
+    "notes": "Medical Supplies | Item #80 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-146",
+    "name": "IV CANNULA G.22",
+    "unit": "Supplier: NEGROS",
+    "price": 39.0,
+    "notes": "Medical Supplies | Item #80 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-147",
+    "name": "IV CANNULA G.24",
+    "unit": "Supplier: BEROVAN",
+    "price": 33.0,
+    "notes": "Medical Supplies | Item #81 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-148",
+    "name": "IV CANNULA G.24",
+    "unit": "Supplier: B-SHINE",
+    "price": 30.55,
+    "notes": "Medical Supplies | Item #81 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-149",
+    "name": "IV CANNULA G.24",
+    "unit": "Supplier: DYNASTY",
+    "price": 36.0,
+    "notes": "Medical Supplies | Item #81 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-150",
+    "name": "IV CANNULA G.24",
+    "unit": "Supplier: MHJ",
+    "price": 32.5,
+    "notes": "Medical Supplies | Item #81 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-151",
+    "name": "IV CANNULA G.24",
+    "unit": "Supplier: NEGROS",
+    "price": 25.0,
+    "notes": "Medical Supplies | Item #81 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-152",
+    "name": "IV CANNULA G.24",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 30.55,
+    "notes": "Medical Supplies | Item #81 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-153",
+    "name": "IV CANNULA G.24",
+    "unit": "Supplier: JUSAN",
+    "price": 36.0,
+    "notes": "Medical Supplies | Item #81 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-154",
+    "name": "IV CANNULA G.26",
+    "unit": "Supplier: BEROVAN",
+    "price": 42.0,
+    "notes": "Medical Supplies | Item #82 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-155",
+    "name": "IV CANNULA G.26",
+    "unit": "Supplier: DYNASTY",
+    "price": 36.0,
+    "notes": "Medical Supplies | Item #82 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-156",
+    "name": "IV CANNULA G.26",
+    "unit": "Supplier: NEGROS",
+    "price": 38.0,
+    "notes": "Medical Supplies | Item #82 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-157",
+    "name": "IV CANNULA G.26",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 30.55,
+    "notes": "Medical Supplies | Item #82 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-158",
+    "name": "IV CANNULA G.26",
+    "unit": "Supplier: NKC",
+    "price": 39.0,
+    "notes": "Medical Supplies | Item #82 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-159",
+    "name": "IV CANNULA G.26",
+    "unit": "Supplier: JUSAN",
+    "price": 36.0,
+    "notes": "Medical Supplies | Item #82 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-160",
+    "name": "IV CANNULA G.26",
+    "unit": "Supplier: MHJ",
+    "price": 30.0,
+    "notes": "Medical Supplies | Item #82 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-161",
+    "name": "JACKSON PRATT DRAIN",
+    "unit": "Supplier: MHJ",
+    "price": 3241.0,
+    "notes": "Medical Supplies | Item #83 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-162",
+    "name": "JACKSON PRATT DRAIN 200ML",
+    "unit": "Supplier: BEROVAN",
+    "price": 3742.5,
+    "notes": "Medical Supplies | Item #84 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-163",
+    "name": "K WIRE 1MM",
+    "unit": "Supplier: CSR",
+    "price": 1040.0,
+    "notes": "Medical Supplies | Item #85 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-164",
+    "name": "K WIRE 2MM",
+    "unit": "Supplier: CSR",
+    "price": 1040.0,
+    "notes": "Medical Supplies | Item #86 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-165",
+    "name": "KMC TUBE LARGE",
+    "unit": "Supplier: CSR",
+    "price": 324.35,
+    "notes": "Medical Supplies | Item #87 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-166",
+    "name": "KMC TUBE MEDIUM",
+    "unit": "Supplier: CSR",
+    "price": 324.35,
+    "notes": "Medical Supplies | Item #88 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-167",
+    "name": "KMC TUBE SMALL",
+    "unit": "Supplier: CSR",
+    "price": 324.35,
+    "notes": "Medical Supplies | Item #89 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-168",
+    "name": "LEUKOPLAST PLASTER 1\"",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 140.4,
+    "notes": "Medical Supplies | Item #90 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-169",
+    "name": "LEUKOPLAST PLASTER 2\"",
+    "unit": "Supplier: MHJ",
+    "price": 405.0,
+    "notes": "Medical Supplies | Item #91 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-170",
+    "name": "LEUKOPLAST PLASTER 4\"",
+    "unit": "Supplier: MHJ",
+    "price": 735.0,
+    "notes": "Medical Supplies | Item #92 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-171",
+    "name": "LUBRICATING JELLY",
+    "unit": "Supplier: B-SHINE",
+    "price": 7.0,
+    "notes": "Medical Supplies | Item #93 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-172",
+    "name": "LUBRICATING JELLY",
+    "unit": "Supplier: NEGROS",
+    "price": 12.0,
+    "notes": "Medical Supplies | Item #93 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-173",
+    "name": "LUBRICATING JELLY",
+    "unit": "Supplier: JETVINZ",
+    "price": 12.0,
+    "notes": "Medical Supplies | Item #93 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-174",
+    "name": "LUBRICATING JELLY",
+    "unit": "Supplier: MHJ",
+    "price": 9.0,
+    "notes": "Medical Supplies | Item #93 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-175",
+    "name": "LUBRICATING JELLY",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 8.45,
+    "notes": "Medical Supplies | Item #93 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-176",
+    "name": "MACROSET",
+    "unit": "Supplier: BEROVAN",
+    "price": 32.5,
+    "notes": "Medical Supplies | Item #94 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-177",
+    "name": "MACROSET",
+    "unit": "Supplier: JOSMEF",
+    "price": 17.0,
+    "notes": "Medical Supplies | Item #94 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-178",
+    "name": "MACROSET",
+    "unit": "Supplier: MHJ",
+    "price": 27.0,
+    "notes": "Medical Supplies | Item #94 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-179",
+    "name": "MACROSET",
+    "unit": "Supplier: NKC",
+    "price": 31.0,
+    "notes": "Medical Supplies | Item #94 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-180",
+    "name": "MICROSET",
+    "unit": "Supplier: BEROVAN",
+    "price": 33.0,
+    "notes": "Medical Supplies | Item #95 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-181",
+    "name": "MOUTH GUARD (GREEN) #1",
+    "unit": "Supplier: BEROVAN",
+    "price": 48.0,
+    "notes": "Medical Supplies | Item #96 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-182",
+    "name": "MOUTH GUARD (GREEN) #2",
+    "unit": "Supplier: BEROVAN",
+    "price": 52.0,
+    "notes": "Medical Supplies | Item #96 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-183",
+    "name": "MOUTH GUARD (GREEN)",
+    "unit": "Supplier: JOSMEF",
+    "price": 36.0,
+    "notes": "Medical Supplies | Item #96 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-184",
+    "name": "MOUTH GUARD (GREEN)",
+    "unit": "Supplier: JUSAN",
+    "price": 101.0,
+    "notes": "Medical Supplies | Item #96 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-185",
+    "name": "MOUTH GUARD (GREEN)",
+    "unit": "Supplier: NKC",
+    "price": 38.0,
+    "notes": "Medical Supplies | Item #96 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-186",
+    "name": "MOUTH GUARD (RED)",
+    "unit": "Supplier: CSR",
+    "price": 150.0,
+    "notes": "Medical Supplies | Item #97 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-187",
+    "name": "MOUTH GUARD (WHITE)",
+    "unit": "Supplier: JOSMEF",
+    "price": 58.5,
+    "notes": "Medical Supplies | Item #98 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-188",
+    "name": "MOUTH GUARD (YELLOW)",
+    "unit": "Supplier: CSR",
+    "price": 150.0,
+    "notes": "Medical Supplies | Item #99 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-189",
+    "name": "N95 MASK",
+    "unit": "Supplier: CSR",
+    "price": 36.0,
+    "notes": "Medical Supplies | Item #100 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-190",
+    "name": "NASAL ASPIRATOR",
+    "unit": "Supplier: MHJ",
+    "price": 130.0,
+    "notes": "Medical Supplies | Item #101 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-191",
+    "name": "NASAL ASPIRATOR",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 50.0,
+    "notes": "Medical Supplies | Item #101 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-192",
+    "name": "NASAL CANNULA ADULT",
+    "unit": "Supplier: GREEN MEDICS",
+    "price": 52.0,
+    "notes": "Medical Supplies | Item #102 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-193",
+    "name": "NASAL CANNULA ADULT",
+    "unit": "Supplier: MHJ",
+    "price": 30.0,
+    "notes": "Medical Supplies | Item #102 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-194",
+    "name": "NASAL CANNULA ADULT",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 25.35,
+    "notes": "Medical Supplies | Item #102 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-195",
+    "name": "NASAL CANNULA NEONATE",
+    "unit": "Supplier: BEROVAN",
+    "price": 52.0,
+    "notes": "Medical Supplies | Item #103 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-196",
+    "name": "NASAL CANNULA NEONATE",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 25.35,
+    "notes": "Medical Supplies | Item #103 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-197",
+    "name": "NASAL CANNULA PEDIA",
+    "unit": "Supplier: GREEN MEDICS",
+    "price": 52.0,
+    "notes": "Medical Supplies | Item #104 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-198",
+    "name": "NASAL CANNULA PEDIA",
+    "unit": "Supplier: MHJ",
+    "price": 45.31,
+    "notes": "Medical Supplies | Item #104 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-199",
+    "name": "NASAL CANNULA PEDIA",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 37.5,
+    "notes": "Medical Supplies | Item #104 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-200",
+    "name": "NEBULIZER KIT W/ MASK ADULT",
+    "unit": "Supplier: BEROVAN",
+    "price": 91.0,
+    "notes": "Medical Supplies | Item #105 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-201",
+    "name": "NEBULIZER KIT W/ MASK ADULT",
+    "unit": "Supplier: GREEN MEDICS",
+    "price": 90.0,
+    "notes": "Medical Supplies | Item #105 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-202",
+    "name": "NEBULIZER KIT W/ MASK ADULT",
+    "unit": "Supplier: MHJ",
+    "price": 91.0,
+    "notes": "Medical Supplies | Item #105 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-203",
+    "name": "NEBULIZER KIT W/ MASK ADULT",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 54.93,
+    "notes": "Medical Supplies | Item #105 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-204",
+    "name": "NEBULIZER KIT W/ MASK PEDIA",
+    "unit": "Supplier: GREEN MEDICS",
+    "price": 90.0,
+    "notes": "Medical Supplies | Item #106 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-205",
+    "name": "NEBULIZER KIT W/ MASK PEDIA",
+    "unit": "Supplier: MHJ",
+    "price": 120.0,
+    "notes": "Medical Supplies | Item #106 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-206",
+    "name": "NEBULIZER KIT W/ MASK PEDIA",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 54.93,
+    "notes": "Medical Supplies | Item #106 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-207",
+    "name": "NEBULIZER KIT W/ MASK PEDIA",
+    "unit": "Supplier: NEGROS",
+    "price": 70.08,
+    "notes": "Medical Supplies | Item #106 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-208",
+    "name": "NGT. FR. 5",
+    "unit": "Supplier: JOSMEF",
+    "price": 45.5,
+    "notes": "Medical Supplies | Item #107 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-209",
+    "name": "NGT. FR. 5",
+    "unit": "Supplier: MHJ",
+    "price": 50.7,
+    "notes": "Medical Supplies | Item #107 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-210",
+    "name": "NGT. FR. 8",
+    "unit": "Supplier: MHJ",
+    "price": 50.7,
+    "notes": "Medical Supplies | Item #108 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-211",
+    "name": "NGT. FR. 10 GENERIC",
+    "unit": "Supplier: JOSMEF",
+    "price": 45.5,
+    "notes": "Medical Supplies | Item #109 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-212",
+    "name": "NGT. FR. 10 SILICON",
+    "unit": "Supplier: CSR",
+    "price": 455.0,
+    "notes": "Medical Supplies | Item #109 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-213",
+    "name": "NGT. FR. 12",
+    "unit": "Supplier: JOSMEF",
+    "price": 45.5,
+    "notes": "Medical Supplies | Item #110 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-214",
+    "name": "NGT. FR. 14",
+    "unit": "Supplier: BEROVAN",
+    "price": 45.0,
+    "notes": "Medical Supplies | Item #111 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-215",
+    "name": "NGT. FR. 14",
+    "unit": "Supplier: MHJ",
+    "price": 50.7,
+    "notes": "Medical Supplies | Item #111 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-216",
+    "name": "NGT. FR. 16",
+    "unit": "Supplier: MHJ",
+    "price": 50.7,
+    "notes": "Medical Supplies | Item #112 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-217",
+    "name": "NGT. FR. 18",
+    "unit": "Supplier: BEROVAN",
+    "price": 52.0,
+    "notes": "Medical Supplies | Item #113 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-218",
+    "name": "OR CAP",
+    "unit": "Supplier: BEROVAN",
+    "price": 3.25,
+    "notes": "Medical Supplies | Item #114 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-219",
+    "name": "OXYGEN MASK ADULT",
+    "unit": "Supplier: GREEN MEDICS",
+    "price": 85.0,
+    "notes": "Medical Supplies | Item #115 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-220",
+    "name": "OXYGEN MASK ADULT",
+    "unit": "Supplier: MHJ",
+    "price": 84.31,
+    "notes": "Medical Supplies | Item #115 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-221",
+    "name": "OXYGEN MASK ADULT",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 50.05,
+    "notes": "Medical Supplies | Item #115 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-222",
+    "name": "OXYGEN MASK PEDIA",
+    "unit": "Supplier: CSR",
+    "price": 290.0,
+    "notes": "Medical Supplies | Item #116 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-223",
+    "name": "OXYGEN MASK PEDIA",
+    "unit": "Supplier: NHJ",
+    "price": 84.49,
+    "notes": "Medical Supplies | Item #116 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-224",
+    "name": "OXYGEN MASK W/ RB ADULT",
+    "unit": "Supplier: CSR",
+    "price": 220.0,
+    "notes": "Medical Supplies | Item #117 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-225",
+    "name": "OXYGEN MASK W/ RB ADULT",
+    "unit": "Supplier: MHJ",
+    "price": 117.0,
+    "notes": "Medical Supplies | Item #117 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-226",
+    "name": "OXYGEN MASK W/ RB PEDIA",
+    "unit": "Supplier: GREEN MEDICS",
+    "price": 315.0,
+    "notes": "Medical Supplies | Item #118 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-227",
+    "name": "OXYGEN MASK W/ RB PEDIA",
+    "unit": "Supplier: MHJ",
+    "price": 117.0,
+    "notes": "Medical Supplies | Item #118 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-228",
+    "name": "PAPER TAPE 1\"",
+    "unit": "Supplier: MHJ",
+    "price": 104.0,
+    "notes": "Medical Supplies | Item #119 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-229",
+    "name": "PEANUT GAUZE",
+    "unit": "Supplier: MHJ",
+    "price": 156.0,
+    "notes": "Medical Supplies | Item #120 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-230",
+    "name": "PENROSE DRAIN 1/2",
+    "unit": "Supplier: BEROVAN",
+    "price": 45.5,
+    "notes": "Medical Supplies | Item #121 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-231",
+    "name": "PENROSE DRAIN 1/4",
+    "unit": "Supplier: BEROVAN",
+    "price": 45.5,
+    "notes": "Medical Supplies | Item #122 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-232",
+    "name": "PERSONAL PROTECTIVE EQUIPMENT",
+    "unit": "Supplier: CSR",
+    "price": 624.0,
+    "notes": "Medical Supplies | Item #123 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-233",
+    "name": "PHOTOTHERAPY EYEMASK",
+    "unit": "Supplier: MHJ",
+    "price": 325.0,
+    "notes": "Medical Supplies | Item #124 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-234",
+    "name": "PHOTOTHERAPY EYEMASK",
+    "unit": "Supplier: BEROVAN",
+    "price": 180.0,
+    "notes": "Medical Supplies | Item #125 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-235",
+    "name": "PIGTAIL SET CATHETER",
+    "unit": "Supplier: MHJ",
+    "price": 5830.0,
+    "notes": "Medical Supplies | Item #126 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-236",
+    "name": "PLASTER OF PARIS 4\"",
+    "unit": "Supplier: BEROVAN",
+    "price": 300.0,
+    "notes": "Medical Supplies | Item #127 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-237",
+    "name": "PLASTER OF PARIS 4\"",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 209.95,
+    "notes": "Medical Supplies | Item #127 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-238",
+    "name": "PLASTER OF PARIS 6\"",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 276.25,
+    "notes": "Medical Supplies | Item #128 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-239",
+    "name": "PROLENE MESH 3X6",
+    "unit": "Supplier: BEROVAN",
+    "price": 3757.5,
+    "notes": "Medical Supplies | Item #129 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-240",
+    "name": "RAZOR/SHAVER",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 15.0,
+    "notes": "Medical Supplies | Item #130 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-241",
+    "name": "RELOAD STAPLER WIRE 45MM",
+    "unit": "Supplier: JOSMEF",
+    "price": 16900.0,
+    "notes": "Medical Supplies | Item #131 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-242",
+    "name": "RELOAD STAPLER WIRE 60MM",
+    "unit": "Supplier: JOSMEF",
+    "price": 7908.0,
+    "notes": "Medical Supplies | Item #132 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-243",
+    "name": "RELOAD STAPLER WIRE 80MM",
+    "unit": "Supplier: JOSMEF",
+    "price": 7908.0,
+    "notes": "Medical Supplies | Item #133 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-244",
+    "name": "RESUSCITATOR BAG ADULT",
+    "unit": "Supplier: NEGROS",
+    "price": 1245.92,
+    "notes": "Medical Supplies | Item #134 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-245",
+    "name": "RESUSCITATOR BAG ADULT",
+    "unit": "Supplier: MHJ",
+    "price": 1170.0,
+    "notes": "Medical Supplies | Item #134 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-246",
+    "name": "RESUSCITATOR BAG NEONATE",
+    "unit": "Supplier: NEGROS",
+    "price": 1245.92,
+    "notes": "Medical Supplies | Item #135 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-247",
+    "name": "RESUSCITATOR BAG NEONATE",
+    "unit": "Supplier: MHJ",
+    "price": 1170.0,
+    "notes": "Medical Supplies | Item #135 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-248",
+    "name": "RESUSCITATOR BAG PEDIA",
+    "unit": "Supplier: NEGROS",
+    "price": 1245.92,
+    "notes": "Medical Supplies | Item #136 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-249",
+    "name": "RESUSCITATOR BAG PEDIA",
+    "unit": "Supplier: MHJ",
+    "price": 1170.0,
+    "notes": "Medical Supplies | Item #136 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-250",
+    "name": "SHOECOVER",
+    "unit": "Supplier: CSR",
+    "price": 15.0,
+    "notes": "Medical Supplies | Item #137 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-251",
+    "name": "SKIN STAPLER",
+    "unit": "Supplier: JOSMEF",
+    "price": 364.0,
+    "notes": "Medical Supplies | Item #138 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-252",
+    "name": "SKIN STAPLER",
+    "unit": "Supplier: MHJ",
+    "price": 358.0,
+    "notes": "Medical Supplies | Item #138 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-253",
+    "name": "SOLUSET",
+    "unit": "Supplier: ONE PHARMA",
+    "price": 103.0,
+    "notes": "Medical Supplies | Item #139 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-254",
+    "name": "SOLUSET",
+    "unit": "Supplier: MHJ",
+    "price": 104.0,
+    "notes": "Medical Supplies | Item #139 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-255",
+    "name": "SOLUSET",
+    "unit": "Supplier: JOSMEF",
+    "price": 78.0,
+    "notes": "Medical Supplies | Item #139 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-256",
+    "name": "SOLUSET",
+    "unit": "Supplier: BEROVAN",
+    "price": 104.0,
+    "notes": "Medical Supplies | Item #139 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-257",
+    "name": "SPECIMEN CUP",
+    "unit": "Supplier: MHJ",
+    "price": 13.0,
+    "notes": "Medical Supplies | Item #140 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-258",
+    "name": "SPECIMEN CUP",
+    "unit": "Supplier: BEROVAN",
+    "price": 13.0,
+    "notes": "Medical Supplies | Item #140 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-259",
+    "name": "SPECIMEN CUP",
+    "unit": "Supplier: JETVINZ",
+    "price": 13.0,
+    "notes": "Medical Supplies | Item #140 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-260",
+    "name": "SPECIMEN CUP",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 13.0,
+    "notes": "Medical Supplies | Item #140 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-261",
+    "name": "SPINAL NEEDLE G.25",
+    "unit": "Supplier: MHJ",
+    "price": 198.0,
+    "notes": "Medical Supplies | Item #141 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-262",
+    "name": "SPONGOSTAN",
+    "unit": "Supplier: BEROVAN",
+    "price": 637.0,
+    "notes": "Medical Supplies | Item #142 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-263",
+    "name": "SUCTION CATH. FR. 5",
+    "unit": "Supplier: BEROVAN",
+    "price": 30.0,
+    "notes": "Medical Supplies | Item #143 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-264",
+    "name": "SUCTION CATH. FR. 5",
+    "unit": "Supplier: MHJ",
+    "price": 30.0,
+    "notes": "Medical Supplies | Item #143 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-265",
+    "name": "SUCTION CATH. FR. 8",
+    "unit": "Supplier: MHJ",
+    "price": 59.0,
+    "notes": "Medical Supplies | Item #144 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-266",
+    "name": "SUCTION CATH. FR. 8",
+    "unit": "Supplier: JOSMEF",
+    "price": 13.0,
+    "notes": "Medical Supplies | Item #144 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-267",
+    "name": "SUCTION CATH. FR. 8",
+    "unit": "Supplier: ONE PHARMA",
+    "price": 31.0,
+    "notes": "Medical Supplies | Item #144 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-268",
+    "name": "SUCTION CATH. FR. 8",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 30.0,
+    "notes": "Medical Supplies | Item #144 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-269",
+    "name": "SUCTION CATH. FR.10",
+    "unit": "Supplier: JOSMEF",
+    "price": 20.0,
+    "notes": "Medical Supplies | Item #145 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-270",
+    "name": "SUCTION CATH. FR. 12",
+    "unit": "Supplier: CSR",
+    "price": 40.0,
+    "notes": "Medical Supplies | Item #146 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-271",
+    "name": "SUCTION CATH. FR. 12",
+    "unit": "Supplier: BEROVAN",
+    "price": 45.0,
+    "notes": "Medical Supplies | Item #146 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-272",
+    "name": "SUCTION CATH. FR. 14",
+    "unit": "Supplier: MHJ",
+    "price": 32.5,
+    "notes": "Medical Supplies | Item #147 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-273",
+    "name": "SUCTION CATH. FR. 14",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 46.15,
+    "notes": "Medical Supplies | Item #147 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-274",
+    "name": "SUCTION CATH. FR. 16",
+    "unit": "Supplier: MHJ",
+    "price": 32.5,
+    "notes": "Medical Supplies | Item #148 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-275",
+    "name": "SUCTION CATH. FR. 16",
+    "unit": "Supplier: ENDURE",
+    "price": 10.0,
+    "notes": "Medical Supplies | Item #148 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-276",
+    "name": "SUCTION CATH. FR. 16",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 46.15,
+    "notes": "Medical Supplies | Item #148 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-277",
+    "name": "SUCTION POOLE DRAIN",
+    "unit": "Supplier: MHJ",
+    "price": 383.5,
+    "notes": "Medical Supplies | Item #149 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-278",
+    "name": "SURGICAL BLADE No. 10",
+    "unit": "Supplier: CSR",
+    "price": 10.0,
+    "notes": "Medical Supplies | Item #150 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-279",
+    "name": "SURGICAL BLADE No. 11",
+    "unit": "Supplier: BEROVAN",
+    "price": 15.0,
+    "notes": "Medical Supplies | Item #151 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-280",
+    "name": "SURGICAL BLADE No. 11",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 4.23,
+    "notes": "Medical Supplies | Item #151 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-281",
+    "name": "SURGICAL BLADE No. 12",
+    "unit": "Supplier: CSR",
+    "price": 10.0,
+    "notes": "Medical Supplies | Item #152 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-282",
+    "name": "SURGICAL BLADE No. 15",
+    "unit": "Supplier: CSR",
+    "price": 10.0,
+    "notes": "Medical Supplies | Item #153 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-283",
+    "name": "SURGICAL BLADE No. 15",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 7.0,
+    "notes": "Medical Supplies | Item #153 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-284",
+    "name": "SURGICAL BLADE No. 20",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 5.0,
+    "notes": "Medical Supplies | Item #154 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-285",
+    "name": "SURGICAL BLADE No. 22",
+    "unit": "Supplier: BEROVAN",
+    "price": 13.0,
+    "notes": "Medical Supplies | Item #155 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-286",
+    "name": "SURGICAL BLADE No. 22",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 4.23,
+    "notes": "Medical Supplies | Item #155 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-287",
+    "name": "SURGICAL GLOVES, STERILE SIZE 6.5",
+    "unit": "Supplier: BEROVAN",
+    "price": 40.0,
+    "notes": "Medical Supplies | Item #156 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-288",
+    "name": "SURGICAL GLOVES, STERILE SIZE 6.5",
+    "unit": "Supplier: MHJ",
+    "price": 26.0,
+    "notes": "Medical Supplies | Item #156 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-289",
+    "name": "SURGICAL GLOVES, STERILE SIZE 6.5",
+    "unit": "Supplier: NKC",
+    "price": 38.0,
+    "notes": "Medical Supplies | Item #156 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-290",
+    "name": "SURGICAL GLOVES, STERILE SIZE 7.0",
+    "unit": "Supplier: BEROVAN",
+    "price": 40.0,
+    "notes": "Medical Supplies | Item #157 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-291",
+    "name": "SURGICAL GLOVES, STERILE SIZE 7.0",
+    "unit": "Supplier: MHJ",
+    "price": 26.0,
+    "notes": "Medical Supplies | Item #157 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-292",
+    "name": "SURGICAL GLOVES, STERILE SIZE 7.0",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 25.0,
+    "notes": "Medical Supplies | Item #157 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-293",
+    "name": "SURGICAL GLOVES, STERILE SIZE 7.0",
+    "unit": "Supplier: NEGROS",
+    "price": 33.0,
+    "notes": "Medical Supplies | Item #157 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-294",
+    "name": "SURGICAL GLOVES, STERILE SIZE 7.5",
+    "unit": "Supplier: BEROVAN",
+    "price": 39.0,
+    "notes": "Medical Supplies | Item #158 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-295",
+    "name": "SURGICAL GLOVES, STERILE SIZE 7.5",
+    "unit": "Supplier: CBROS",
+    "price": 38.0,
+    "notes": "Medical Supplies | Item #158 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-296",
+    "name": "SURGICAL GLOVES, STERILE SIZE 7.5",
+    "unit": "Supplier: CSR",
+    "price": 45.0,
+    "notes": "Medical Supplies | Item #158 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-297",
+    "name": "SURGICAL GLOVES, STERILE SIZE 7.5",
+    "unit": "Supplier: MHU",
+    "price": 26.0,
+    "notes": "Medical Supplies | Item #158 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-298",
+    "name": "SURGICAL GLOVES, STERILE SIZE 8.0",
+    "unit": "Supplier: BEROVAN",
+    "price": 45.0,
+    "notes": "Medical Supplies | Item #159 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-299",
+    "name": "SURGICAL GLOVES, STERILE SIZE 8.0",
+    "unit": "Supplier: CSR",
+    "price": 45.0,
+    "notes": "Medical Supplies | Item #159 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-300",
+    "name": "SURGICAL GLOVES, STERILE SIZE 8.0",
+    "unit": "Supplier: MHJ",
+    "price": 26.0,
+    "notes": "Medical Supplies | Item #159 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-301",
+    "name": "SURGICAL GLOVES, STERILE SIZE 8.0",
+    "unit": "Supplier: JOSMEF",
+    "price": 23.0,
+    "notes": "Medical Supplies | Item #159 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-302",
+    "name": "SURGICAL TAPE 1\"",
+    "unit": "Supplier: MHJ",
+    "price": 91.0,
+    "notes": "Medical Supplies | Item #160 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-303",
+    "name": "SURGICAL TAPE 1\"",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 91.0,
+    "notes": "Medical Supplies | Item #160 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-304",
+    "name": "SURGICAL TAPE 1/2\"",
+    "unit": "Supplier: MHJ",
+    "price": 91.0,
+    "notes": "Medical Supplies | Item #161 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-305",
+    "name": "SURGICEL NU-KNIT",
+    "unit": "Supplier: BEROVAN",
+    "price": 3334.5,
+    "notes": "Medical Supplies | Item #162 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-306",
+    "name": "SURGICEL SNOW 2X4",
+    "unit": "Supplier: BEROVAN",
+    "price": 4470.0,
+    "notes": "Medical Supplies | Item #163 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-307",
+    "name": "SYRINGE 1CC",
+    "unit": "Supplier: CSR",
+    "price": 7.5,
+    "notes": "Medical Supplies | Item #164 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-308",
+    "name": "SYRINGE 1CC",
+    "unit": "Supplier: MHJ",
+    "price": 7.5,
+    "notes": "Medical Supplies | Item #164 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-309",
+    "name": "SYRINGE 1CC",
+    "unit": "Supplier: NEGROS",
+    "price": 4.94,
+    "notes": "Medical Supplies | Item #164 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-310",
+    "name": "SYRINGE 3CC",
+    "unit": "Supplier: CSR",
+    "price": 7.5,
+    "notes": "Medical Supplies | Item #165 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-311",
+    "name": "SYRINGE 3CC",
+    "unit": "Supplier: MHJ",
+    "price": 4.2,
+    "notes": "Medical Supplies | Item #165 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-312",
+    "name": "SYRINGE 3CC",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 4.0,
+    "notes": "Medical Supplies | Item #165 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-313",
+    "name": "SYRINGE 5CC",
+    "unit": "Supplier: CSR",
+    "price": 7.5,
+    "notes": "Medical Supplies | Item #166 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-314",
+    "name": "SYRINGE 5CC",
+    "unit": "Supplier: NEGROS",
+    "price": 5.0,
+    "notes": "Medical Supplies | Item #166 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-315",
+    "name": "SYRINGE 5CC",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 4.43,
+    "notes": "Medical Supplies | Item #166 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-316",
+    "name": "SYRINGE 10CC",
+    "unit": "Supplier: CSR",
+    "price": 8.0,
+    "notes": "Medical Supplies | Item #167 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-317",
+    "name": "SYRINGE 10CC",
+    "unit": "Supplier: MHJ",
+    "price": 5.0,
+    "notes": "Medical Supplies | Item #167 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-318",
+    "name": "SYRINGE 10CC",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 5.48,
+    "notes": "Medical Supplies | Item #167 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-319",
+    "name": "SYRINGE 20CC",
+    "unit": "Supplier: MHJ",
+    "price": 25.0,
+    "notes": "Medical Supplies | Item #168 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-320",
+    "name": "SYRINGE 20CC",
+    "unit": "Supplier: ONE PHARMA",
+    "price": 31.0,
+    "notes": "Medical Supplies | Item #168 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-321",
+    "name": "SYRINGE 20CC",
+    "unit": "Supplier: NKC",
+    "price": 20.0,
+    "notes": "Medical Supplies | Item #168 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-322",
+    "name": "SYRINGE 50CC",
+    "unit": "Supplier: ONE PHARMA",
+    "price": 44.0,
+    "notes": "Medical Supplies | Item #169 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-323",
+    "name": "SYRINGE 50CC",
+    "unit": "Supplier: MHJ",
+    "price": 39.0,
+    "notes": "Medical Supplies | Item #169 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-324",
+    "name": "SYRINGE INSULIN 1ML",
+    "unit": "Supplier: CSR",
+    "price": 10.0,
+    "notes": "Medical Supplies | Item #170 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-325",
+    "name": "SYRINGE INSULIN 1ML",
+    "unit": "Supplier: MHJ",
+    "price": 20.0,
+    "notes": "Medical Supplies | Item #170 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-326",
+    "name": "THORACIC CATHETER FR. 28",
+    "unit": "Supplier: CSR",
+    "price": 650.0,
+    "notes": "Medical Supplies | Item #171 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-327",
+    "name": "THORACIC CATHETER FR. 28",
+    "unit": "Supplier: JOSMEF",
+    "price": 364.0,
+    "notes": "Medical Supplies | Item #171 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-328",
+    "name": "THORACIC CATHETER FR. 32",
+    "unit": "Supplier: JOSMEF",
+    "price": 364.0,
+    "notes": "Medical Supplies | Item #172 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-329",
+    "name": "THORACOSTOMY BOTTLE 1.6L",
+    "unit": "Supplier: BEROVAN",
+    "price": 1170.0,
+    "notes": "Medical Supplies | Item #173 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-330",
+    "name": "TONGUE DEPRESSOR",
+    "unit": "Supplier: CSR",
+    "price": 6.0,
+    "notes": "Medical Supplies | Item #174 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-331",
+    "name": "T-TUBE RUBBER #20",
+    "unit": "Supplier: BEROVAN",
+    "price": 300.0,
+    "notes": "Medical Supplies | Item #175 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-332",
+    "name": "URINE BAG",
+    "unit": "Supplier: GREEN MEDICS",
+    "price": 42.0,
+    "notes": "Medical Supplies | Item #176 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-333",
+    "name": "URINE BAG",
+    "unit": "Supplier: ENDURE",
+    "price": 28.0,
+    "notes": "Medical Supplies | Item #176 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-334",
+    "name": "URINE BAG",
+    "unit": "Supplier: NEGROS",
+    "price": 46.0,
+    "notes": "Medical Supplies | Item #176 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-335",
+    "name": "URINE BAG",
+    "unit": "Supplier: JETVINZ",
+    "price": 44.0,
+    "notes": "Medical Supplies | Item #176 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-336",
+    "name": "URINE BAG",
+    "unit": "Supplier: BEROVAN",
+    "price": 39.0,
+    "notes": "Medical Supplies | Item #176 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-337",
+    "name": "URINE BAG",
+    "unit": "Supplier: ONE PHARMA",
+    "price": 44.0,
+    "notes": "Medical Supplies | Item #176 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-338",
+    "name": "URINE BAG W/ HOOK 2000ML",
+    "unit": "Supplier: MHJ",
+    "price": 41.54,
+    "notes": "Medical Supplies | Item #178 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-339",
+    "name": "URINE BAG W/ HOOK 2000ML",
+    "unit": "Supplier: TANN PHARMA",
+    "price": 25.35,
+    "notes": "Medical Supplies | Item #178 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-340",
+    "name": "URINE COLLECTOR (WEE BAG)",
+    "unit": "Supplier: MHJ",
+    "price": 18.0,
+    "notes": "Medical Supplies | Item #179 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-341",
+    "name": "WADDING SHEET 4\"",
+    "unit": "Supplier: BEROVAN",
+    "price": 59.0,
+    "notes": "Medical Supplies | Item #180 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-342",
+    "name": "WADDING SHEET 6\"",
+    "unit": "Supplier: CSR",
+    "price": 75.0,
+    "notes": "Medical Supplies | Item #181 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-343",
+    "name": "DUODERM GEL 15GM",
+    "unit": "Supplier: IPI",
+    "price": 419.0,
+    "notes": "Medical Supplies | Item #182 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-344",
+    "name": "DUODERM EXTRA THIN SIZE 4\" 4X4 (10X10CM)",
+    "unit": "Supplier: IPI",
+    "price": 229.0,
+    "notes": "Medical Supplies | Item #183 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-345",
+    "name": "DUODERM EXTRA THIN SIZE 2\" X 8\" (5X20CM)",
+    "unit": "Supplier: IPI",
+    "price": 294.0,
+    "notes": "Medical Supplies | Item #184 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-346",
+    "name": "DUODERM CGF SIZE 4\" X4\" (10X10CM)",
+    "unit": "Supplier: IPI",
+    "price": 468.0,
+    "notes": "Medical Supplies | Item #185 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-347",
+    "name": "AQUACEL FOAM NADH SIZE 4\" X 4\" (10X10CM)",
+    "unit": "Supplier: IPI",
+    "price": 562.0,
+    "notes": "Medical Supplies | Item #186 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-348",
+    "name": "AQUACEL FOAM NADHSIZE 8\"X8\" (20X20CM)",
+    "unit": "Supplier: IPI",
+    "price": 1950.0,
+    "notes": "Medical Supplies | Item #187 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-349",
+    "name": "AQUACEL AG FOAM NADH SIZE 8.5\"X8.5\" (21X21CM)",
+    "unit": "Supplier: IPI",
+    "price": 4136.0,
+    "notes": "Medical Supplies | Item #188 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-350",
+    "name": "AQUACEL AG SURGICAL COVER DRESSING SIZE 3.5\"X4\"(9X10CM)",
+    "unit": "Supplier: IPI",
+    "price": 1483.0,
+    "notes": "Medical Supplies | Item #189 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-351",
+    "name": "AQUACEL AG SURGICAL COVER DRESSING SIZE 3.5\"X10\"(9X25CM)",
+    "unit": "Supplier: IPI",
+    "price": 2331.0,
+    "notes": "Medical Supplies | Item #190 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-352",
+    "name": "AQUACEL AG SURGICAL COVER DRESSING SIZE 3.5\"X14\"(9X35CM)",
+    "unit": "Supplier: IPI",
+    "price": 2543.0,
+    "notes": "Medical Supplies | Item #191 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-353",
+    "name": "AQUACEL AG+ EXTRA SIZE 4\"X4\"(10X10CM",
+    "unit": "Supplier: IPI",
+    "price": 1598.0,
+    "notes": "Medical Supplies | Item #192 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-354",
+    "name": "AQUACEL AG+ EXTRA SIZE 8\"X12\"(20X30CM",
+    "unit": "Supplier: IPI",
+    "price": 5954.0,
+    "notes": "Medical Supplies | Item #193 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-355",
+    "name": "SUR-FIT NATURA ACTIVE LIFE ADULT (19MM-64MM)",
+    "unit": "Supplier: IPI",
+    "price": 443.0,
+    "notes": "Medical Supplies | Item #194 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-356",
+    "name": "SUR-FIT NATURA ACTIVE LIFE PEDIA (50MM)",
+    "unit": "Supplier: IPI",
+    "price": 390.0,
+    "notes": "Medical Supplies | Item #195 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-357",
+    "name": "SUR-FIT NATURA OSTOMY STARTER KIT FLEXIBLE WAFER (STARTER KIT-SIZE 45MM)",
+    "unit": "Supplier: IPI",
+    "price": 787.0,
+    "notes": "Medical Supplies | Item #196 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-358",
+    "name": "SUR-FIT NATURA OSTOMY STARTER KIT FLEXIBLE WAFER (STARTER KIT-SIZE 57MM)",
+    "unit": "Supplier: IPI",
+    "price": 787.0,
+    "notes": "Medical Supplies | Item #197 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-359",
+    "name": "SUR-FIT NATURA OSTOMY STARTER KIT FLEXIBLE WAFER (STARTER KIT - SIZE70MM)",
+    "unit": "Supplier: IPI",
+    "price": 787.0,
+    "notes": "Medical Supplies | Item #198 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-360",
+    "name": "CONVATEC STOMAHESIVE PASTE (56.7G) TUBE",
+    "unit": "Supplier: IPI",
+    "price": 1333.0,
+    "notes": "Medical Supplies | Item #199 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-361",
+    "name": "SUR-FIT NATURA FLEXIBLE WAFER (SIZE 45MM)",
+    "unit": "Supplier: IPI",
+    "price": 463.0,
+    "notes": "Medical Supplies | Item #200 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-362",
+    "name": "SUR-FIT NATURA FLEXIBLE WAFER (SIZE 57MM)",
+    "unit": "Supplier: IPI",
+    "price": 463.0,
+    "notes": "Medical Supplies | Item #201 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-363",
+    "name": "SUR-FIT NATURA FLEXIBLE WAFER (SIZE 70MM)",
+    "unit": "Supplier: IPI",
+    "price": 463.0,
+    "notes": "Medical Supplies | Item #202 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-364",
+    "name": "SUR-FIT NATURA DRAINABLE POUCH (SIZE 45MM)",
+    "unit": "Supplier: IPI",
+    "price": 227.0,
+    "notes": "Medical Supplies | Item #203 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-365",
+    "name": "SUR-FIT NATURA DRAINABLE POUCH (SIZE 57MM)",
+    "unit": "Supplier: IPI",
+    "price": 227.0,
+    "notes": "Medical Supplies | Item #204 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-MED-366",
+    "name": "SUR-FIT NATURA DRAINABLE POUCH (SIZE 70MM)",
+    "unit": "Supplier: IPI",
+    "price": 227.0,
+    "notes": "Medical Supplies | Item #205 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-001",
+    "name": "ETHILON 3.0 CUTTING",
+    "unit": "Supplier: BEROVAN",
+    "price": 650.0,
+    "notes": "Sutures | Item #206 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-002",
+    "name": "FILASILK O STRAND",
+    "unit": "Supplier: JOSMEF",
+    "price": 227.5,
+    "notes": "Sutures | Item #207 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-003",
+    "name": "FILASILK 2.O CUTTING",
+    "unit": "Supplier: JOSMEF",
+    "price": 247.0,
+    "notes": "Sutures | Item #208 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-004",
+    "name": "MONOCRYL 2.0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 845.0,
+    "notes": "Sutures | Item #209 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-005",
+    "name": "MONOCRYL 4.0 CUTTING",
+    "unit": "Supplier: BEROVAN",
+    "price": 949.0,
+    "notes": "Sutures | Item #210 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-006",
+    "name": "MONOCYRL 0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 1001.0,
+    "notes": "Sutures | Item #211 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-007",
+    "name": "MONOSYN 0 ROUND",
+    "unit": "Supplier: JOSMEF",
+    "price": 819.0,
+    "notes": "Sutures | Item #212 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-008",
+    "name": "NOVOSYN 2.0 CUTTING",
+    "unit": "Supplier: JOSMEF",
+    "price": 624.0,
+    "notes": "Sutures | Item #213 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-009",
+    "name": "NOVOSYN 3.0 ROUND",
+    "unit": "Supplier: JOSMEF",
+    "price": 624.0,
+    "notes": "Sutures | Item #214 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-010",
+    "name": "PDS 2.0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 630.0,
+    "notes": "Sutures | Item #215 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-011",
+    "name": "PDS PLUS 0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 645.0,
+    "notes": "Sutures | Item #216 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-012",
+    "name": "PDS PLUS LOOP 0",
+    "unit": "Supplier: BEROVAN",
+    "price": 878.0,
+    "notes": "Sutures | Item #217 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-013",
+    "name": "PROLENE 0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 922.5,
+    "notes": "Sutures | Item #218 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-014",
+    "name": "PROLENE 2.0 CUTTING",
+    "unit": "Supplier: BEROVAN",
+    "price": 682.5,
+    "notes": "Sutures | Item #219 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-015",
+    "name": "PROLENE 2.0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 600.0,
+    "notes": "Sutures | Item #220 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-016",
+    "name": "PROLENE 3.0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 1599.0,
+    "notes": "Sutures | Item #221 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-017",
+    "name": "PROLENE 4.0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 1638.0,
+    "notes": "Sutures | Item #222 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-018",
+    "name": "SILK 0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 475.0,
+    "notes": "Sutures | Item #223 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-019",
+    "name": "SILK 0 STRAND",
+    "unit": "Supplier: BEROVAN",
+    "price": 227.5,
+    "notes": "Sutures | Item #224 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-020",
+    "name": "SILK 2.0 CUTTING",
+    "unit": "Supplier: BEROVAN",
+    "price": 247.0,
+    "notes": "Sutures | Item #225 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-021",
+    "name": "SILK 2.0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 299.0,
+    "notes": "Sutures | Item #226 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-022",
+    "name": "SILK 2.0 STRAND",
+    "unit": "Supplier: BEROVAN",
+    "price": 325.0,
+    "notes": "Sutures | Item #227 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-023",
+    "name": "SILK 3.0 CUTTING",
+    "unit": "Supplier: BEROVAN",
+    "price": 285.0,
+    "notes": "Sutures | Item #228 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-024",
+    "name": "SILK 3.0 CUTTING",
+    "unit": "Supplier: JOSMEF",
+    "price": 247.0,
+    "notes": "Sutures | Item #229 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-025",
+    "name": "SILK 3.0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 273.0,
+    "notes": "Sutures | Item #230 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-026",
+    "name": "SILK 3.0 STRAND",
+    "unit": "Supplier: BEROVAN",
+    "price": 299.0,
+    "notes": "Sutures | Item #231 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-027",
+    "name": "SILK 4.0 CUTTING",
+    "unit": "Supplier: BEROVAN",
+    "price": 257.4,
+    "notes": "Sutures | Item #232 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-028",
+    "name": "SILK 4.0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 247.0,
+    "notes": "Sutures | Item #234 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-029",
+    "name": "VICRYL 0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 650.0,
+    "notes": "Sutures | Item #235 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-030",
+    "name": "VICRYL PLUS 1 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 754.0,
+    "notes": "Sutures | Item #236 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-031",
+    "name": "VICRYL PLUS 2.0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 806.0,
+    "notes": "Sutures | Item #237 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-032",
+    "name": "VICRYL PLUS 3.0 CUTTING",
+    "unit": "Supplier: BEROVAN",
+    "price": 628.5,
+    "notes": "Sutures | Item #238 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-033",
+    "name": "VICRYL PLUS 3.0 ROUND",
+    "unit": "Supplier: BEROVAN",
+    "price": 616.5,
+    "notes": "Sutures | Item #239 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-SUT-034",
+    "name": "VICRYL PLUS 4.0 CUTTING",
+    "unit": "Supplier: BEROVAN",
+    "price": 565.5,
+    "notes": "Sutures | Item #240 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-DIA-001",
+    "name": "BLOODLINES / BLLOD TUBING SET W/2TP IV SET",
+    "unit": "Supplier: MHJ",
+    "price": 375.0,
+    "notes": "Dialysis | Item #241 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-DIA-002",
+    "name": "DIALYZER (SYNTHETIC HOLLOW FIBER 1.4M)",
+    "unit": "Supplier: AZ MARKET",
+    "price": 1950.0,
+    "notes": "Dialysis | Item #242 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-DIA-003",
+    "name": "DIALYZER HI LUX",
+    "unit": "Supplier: EURO MED",
+    "price": 1950.0,
+    "notes": "Dialysis | Item #242 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-DIA-004",
+    "name": "DIALYZER HI LUX",
+    "unit": "Supplier: MHJ",
+    "price": 1625.0,
+    "notes": "Dialysis | Item #242 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-DIA-005",
+    "name": "FISTULA NEEDLE G. 16",
+    "unit": "Supplier: MHJ",
+    "price": 50.0,
+    "notes": "Dialysis | Item #243 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-DIA-006",
+    "name": "FISTULA NEEDLE G. 17",
+    "unit": "Supplier: MHJ",
+    "price": 50.0,
+    "notes": "Dialysis | Item #244 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-DIA-007",
+    "name": "FISTULA NEEDLE G. 17",
+    "unit": "Supplier: JOSMEF",
+    "price": 46.0,
+    "notes": "Dialysis | Item #244 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-DIA-008",
+    "name": "HEMODIALYSIS ACID CONCENTRATE",
+    "unit": "Supplier: JOSMEF",
+    "price": 676.0,
+    "notes": "Dialysis | Item #246 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-CPU-001",
+    "name": "BACTERIAL FILTER",
+    "unit": "Supplier: JOSMEF",
+    "price": 416.0,
+    "notes": "Cardio Pulmonary | Item #247 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-CPU-002",
+    "name": "BACTERIAL FILTER",
+    "unit": "Supplier: MHJ",
+    "price": 403.0,
+    "notes": "Cardio Pulmonary | Item #247 (As of Oct 26, 2026)"
+  },
+  {
+    "item_code": "CSR-CPU-003",
+    "name": "VENTILATOR TUBING SET, ADULT",
+    "unit": "Supplier: JOSMEF",
+    "price": 1820.0,
+    "notes": "Cardio Pulmonary | Item #248 (As of Oct 26, 2026)"
+  }
+]

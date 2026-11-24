@@ -32,15 +32,9 @@ class PricelistSeeder extends Seeder
             [
                 'name' => 'Central Supply Room',
                 'slug' => 'central-supply-room',
-                'description' => 'Sterile medical-surgical supplies, IV consumables, and dressing materials dispensed by the Central Supply Room (CSR).',
+                'description' => 'Official Central Supply Room - Medical Supplies Pricelist (as of October 26, 2026) covering Medical Supplies, Sutures, Dialysis, and Cardio Pulmonary consumables.',
                 'sort_order' => 3,
-                'items' => [
-                    ['item_code' => 'CSR-IVC20', 'name' => 'IV Cannula Gauge 20 (Sterile)', 'unit' => 'Per Piece', 'price' => 38.00, 'notes' => null],
-                    ['item_code' => 'CSR-IVSET', 'name' => 'Macrodrip IV Infusion Set', 'unit' => 'Per Set', 'price' => 32.00, 'notes' => null],
-                    ['item_code' => 'CSR-SYR5', 'name' => 'Disposable Syringe 5mL with Needle', 'unit' => 'Per Piece', 'price' => 9.50, 'notes' => null],
-                    ['item_code' => 'CSR-GLV75', 'name' => 'Sterile Surgical Gloves Size 7.5', 'unit' => 'Per Pair', 'price' => 28.00, 'notes' => null],
-                    ['item_code' => 'CSR-FC16', 'name' => 'Foley Catheter Fr. 16 (2-Way Silicone Coated)', 'unit' => 'Per Piece', 'price' => 95.00, 'notes' => null],
-                ],
+                'items' => $this->csrItems(),
             ],
             [
                 'name' => 'Radiology',
@@ -99,7 +93,7 @@ class PricelistSeeder extends Seeder
                 array_merge($categoryData, ['last_updated_at' => now()]),
             );
 
-            if (in_array($categoryData['slug'], ['laboratory', 'pharmacy', 'radiology', 'ultrasound', 'philhealth'], true)) {
+            if (in_array($categoryData['slug'], ['laboratory', 'pharmacy', 'central-supply-room', 'radiology', 'ultrasound', 'philhealth'], true)) {
                 $keepCodes = array_column($items, 'item_code');
                 $existingCodes = PricelistItem::query()
                     ->where('category_id', $category->id)
@@ -157,13 +151,33 @@ class PricelistSeeder extends Seeder
     }
 
     /**
+     * Load official Central Supply Room supplies (as of October 26, 2026).
+     *
+     * @return list<array{item_code: string, name: string, unit: string, price: float, notes: string}>
+     */
+    private function csrItems(): array
+    {
+        return $this->loadJsonItems('csr_supplies.json');
+    }
+
+    /**
      * Load the official PhilHealth Case Rates (Annex A, Annex B, Annex C, and NBB).
      *
      * @return list<array{item_code: string, name: string, unit: string, price: float, notes: string}>
      */
     private function philhealthItems(): array
     {
-        $path = database_path('seeders/data/philhealth_case_rates.json');
+        return $this->loadJsonItems('philhealth_case_rates.json');
+    }
+
+    /**
+     * Read and decode a structured pricelist JSON dataset from seeders/data.
+     *
+     * @return list<array{item_code: string, name: string, unit: string, price: float, notes: string}>
+     */
+    private function loadJsonItems(string $filename): array
+    {
+        $path = database_path("seeders/data/{$filename}");
         /** @var list<array{item_code: string, name: string, unit: string, price: float, notes: string}> $decoded */
         $decoded = json_decode((string) file_get_contents($path), true, 512, JSON_THROW_ON_ERROR);
 
